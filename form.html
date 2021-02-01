@@ -15,27 +15,27 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
               <button class="site-list__close" type="button">Закрыть</button>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+              <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <section class="greeteng-mini">
+      <section class="greeting-mini">
         <h1 class="visually-hidden">Добро пожаловать в Sedona!</h1>
         <img
-          class="greeteng-mini__signature"
+          class="greeting-mini__signature"
           src="/img/SEDONA.png"
           alt="Седона"
         />
@@ -48,7 +48,7 @@
         </p>
       </section>
       <section class="info">
-        <p class="info__title">Представьтесь:</p>
+        <h3 class="info__title">Представьтесь:</h3>
         <form class="name-form" method="POST">
           <label class="name-form__label"
             >Имя*:
@@ -69,7 +69,7 @@
         </form>
       </section>
       <section class="info">
-        <p class="info-title">Контактная информация</p>
+        <h3 class="info__title">Контактная информация</h3>
         <form class="number-form" method="POST">
           <label class="number-form__label"
             >Контактный телефон*:
@@ -90,7 +90,7 @@
         </form>
       </section>
       <section class="info">
-        <p class="info_title"></p>
+        <h3 class="info__title">Ваше общее впечатление:</h3>
         <form class="impression-form" method="POST">
           <label class="impression-form__label"
             >Скорее положительное
@@ -106,7 +106,7 @@
             <input
               class="impression-form__input"
               type="radio"
-              name="radio-buuton"
+              name="radio-button"
               value="2"
             />
           </label>
@@ -122,7 +122,7 @@
         </form>
       </section>
       <section class="info">
-        <p class="info-title">Посещенные достопримечательности:</p>
+        <h3 class="info__title">Посещенные достопримечательности:</р>
         <form class="attractions" method="POST">
           <label class="attractions__label"
             >Мост Дьявола
@@ -163,7 +163,7 @@
         </form>
       </section>
       <section class="info">
-        <p class="info__title">Опишите свои эмоции:</p>
+        <h3 class="info__title">Опишите свои эмоции:</h3>
         <form class="emotion" method="POST">
           <textarea
             class="emotion__text"
