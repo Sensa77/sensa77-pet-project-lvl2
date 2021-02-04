@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sedona</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="/img/logotype-mobile.png" alt="Логотип Седоны" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+              <button class="site-list__close" type="button">Закрыть</button>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="greeting-mini">
+        <h1 class="visually-hidden">Добро пожаловать в Sedona!</h1>
+        <img
+          class="greeting-mini__signature"
+          src="/img/SEDONA.png"
+          alt="Седона"
+        />
+      </section>
+      <section class="aside">
+        <h2 class="aside__title">Оставьте свой отзыв</h2>
+        <p class="aside__description">
+          Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях
+        </p>
+      </section>
+      <section class="info">
+        <h3 class="info__title">Представьтесь:</h3>
+        <form class="name-form" method="POST">
+          <label class="name-form__label"
+            >Имя*:
+            <input class="name-form__input" type="text" placeholder="Пётр" />
+          </label>
+          <label class="name-form__label"
+            >Фамилия*:
+            <input class="name-form__input" type="text" placeholder="Иванов" />
+          </label>
+          <label class="name-form__label"
+            >Отчество*:
+            <input
+              class="name-form__input"
+              type="text"
+              placeholder="Александрович"
+            />
+          </label>
+        </form>
+      </section>
+      <section class="info">
+        <h3 class="info__title">Контактная информация</h3>
+        <form class="number-form" method="POST">
+          <label class="number-form__label"
+            >Контактный телефон*:
+            <input
+              class="number-form__input"
+              type="number"
+              placeholder="Введите телефон"
+            />
+          </label>
+          <label class="number-form__label"
+            >Электронная почта*:
+            <input
+              class="number-form__input"
+              type="email"
+              placeholder="Введите e-mail"
+            />
+          </label>
+        </form>
+      </section>
+      <section class="info">
+        <h3 class="info__title">Ваше общее впечатление:</h3>
+        <form class="impression-form" method="POST">
+          <label class="impression-form__label"
+            >Скорее положительное
+            <input
+              class="impression-form__input"
+              type="radio"
+              name="radio-buuton"
+              value="1"
+            />
+          </label>
+          <label class="impression-form__label"
+            >Скорее отрицательное
+            <input
+              class="impression-form__input"
+              type="radio"
+              name="radio-button"
+              value="2"
+            />
+          </label>
+          <label class="impression-form__label"
+            >Затрудняюсь ответить
+            <input
+              class="impression-form__input"
+              type="radio"
+              name="radio-buuton"
+              value="3"
+            />
+          </label>
+        </form>
+      </section>
+      <section class="info">
+        <h3 class="info__title">Посещенные достопримечательности:</р>
+        <form class="attractions" method="POST">
+          <label class="attractions__label"
+            >Мост Дьявола
+            <input
+              class="attractions__input"
+              type="checkbox"
+              name="Мост Дьявола"
+              value="1"
+            />
+          </label>
+          <label class="attractions__label"
+            >Гора-Колокол
+            <input
+              class="attractions__input"
+              type="checkbox"
+              name="Гора-Колокол"
+              value="2"
+            />
+          </label>
+          <label class="attractions__label"
+            >Слайд-парк
+            <input
+              class="attractions__input"
+              type="checkbox"
+              name="Слайд-парк"
+              value="3"
+            />
+          </label>
+          <label class="attractions__label"
+            >Красные скалы
+            <input
+              class="attractions__input"
+              type="checkbox"
+              name="Красные скалы"
+              value="4"
+            />
+          </label>
+        </form>
+      </section>
+      <section class="info">
+        <h3 class="info__title">Опишите свои эмоции:</h3>
+        <form class="emotion" method="POST">
+          <textarea
+            class="emotion__text"
+            cols="50"
+            rows="10"
+            placeholder="Опишите подробно все свои восторги"
+          ></textarea>
+        </form>
+        <button type="button" class="info__button button">
+          Отправить отзыв
+        </button>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="map"></section>
+      <section class="social-networks">
+        <b class="social-networks__hashtag">#VisitSedona</b>
+        <ul class="social-networks__list">
+          <li>
+            <button
+              class="social-networks__item social-networks__item--twitter"
+              type="button"
+            >
+              Твиттер
+            </button>
+          </li>
+          <li>
+            <button
+              class="social-networks__item social-networks__item--facebook"
+              type="button"
+            >
+              Фэйсбук
+            </button>
+          </li>
+          <li>
+            <button
+              class="social-networks__item social-networks__item--youtube"
+              type="button"
+            >
+              Ютуб
+            </button>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <img class="copyright__icon" />
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
