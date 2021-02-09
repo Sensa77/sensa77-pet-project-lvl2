@@ -1,0 +1,15 @@
+.site-list {
+  display: none;
+}
+
+.site-list__item {
+  flex-direction: column;
+  color: #fff;
+  background-color: $background-color;
+}
+
+.site-list__link {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}

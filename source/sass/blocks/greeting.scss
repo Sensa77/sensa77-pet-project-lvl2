@@ -1,0 +1,25 @@
+.greeting {
+  background-image: url(../../img/back-mobile.png);
+  height: 390px;
+  position: relative;
+  z-index: 0;
+}
+
+.greeting__signature {
+  padding-top: 90px;
+}
+
+.greeting__intro {
+  padding-top: 45px;
+}
+
+.greeting::after {
+  content: "";
+  background-image: url(../../img/intro-triangle.png);
+  width: 320px;
+  height: 57px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

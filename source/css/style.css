@@ -379,11 +379,139 @@ th {
 
 body {
   font-family: "PT Sans", "Arial", sans-serif;
-  margin: 0;
-  background-color: #fff; }
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+  text-transform: none;
+  background-color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+  width: 320px; }
 
 html {
   box-sizing: border-box;
   text-align: center; }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+.page-header__nav {
+  position: relative; }
+
+.page-main__greeting {
+  margin-top: -27px;
+  margin-bottom: 42px; }
+
+.main-nav__wrapper {
+  display: flex;
+  justify-content: flex-end; }
+
+.main-nav__logo {
+  margin-right: 65px; }
+
+.main-nav__toggle {
+  border: none;
+  background-color: inherit; }
+
+.main-nav {
+  z-index: 1; }
+
+.site-list {
+  display: none; }
+
+.site-list__item {
+  flex-direction: column;
+  color: #fff;
+  background-color: #81b3d2; }
+
+.site-list__link {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none; }
+
+.greeting {
+  background-image: url(../../img/back-mobile.png);
+  height: 390px;
+  position: relative;
+  z-index: 0; }
+
+.greeting__signature {
+  padding-top: 90px; }
+
+.greeting__intro {
+  padding-top: 45px; }
+
+.greeting::after {
+  content: "";
+  background-image: url(../../img/intro-triangle.png);
+  width: 320px;
+  height: 57px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.aside__title {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 42px;
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 26px; }
+
+.aside__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 26px; }
+
+.aside {
+  position: relative;
+  z-index: 0; }
+
+.advantage {
+  background-color: #81b3d2;
+  color: #fff;
+  position: relative;
+  min-height: 210px; }
+
+.advantage__title {
+  padding-top: 58px;
+  margin-bottom: 18px;
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 26px; }
+
+.advantage__number {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 21px; }
+
+.advantage__description {
+  font-size: 14px;
+  line-height: 21px; }
+
+.advantage__wrapper {
+  margin-left: 17px;
+  margin-right: 17px; }
+
+.advantage_intro::after {
+  content: "";
+  background-image: url(../../img/intro-mini.png);
+  width: 320px;
+  height: 37px;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0; }
+
+.advantage-list {
+  min-height: 416px; }
 
 /*# sourceMappingURL=style.css.map */

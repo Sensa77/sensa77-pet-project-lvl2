@@ -1,0 +1,41 @@
+.advantage {
+  background-color: $background-color;
+  color: #fff;
+  position: relative;
+  min-height: 210px;
+}
+
+.advantage__title {
+  padding-top: 58px;
+  margin-bottom: 18px;
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantage__number {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantage__description {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantage__wrapper {
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+.advantage_intro::after {
+  content: "";
+  background-image: url(../../img/intro-mini.png);
+  width: 320px;
+  height: 37px;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+}
