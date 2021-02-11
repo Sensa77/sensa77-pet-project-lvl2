@@ -14,6 +14,7 @@
 }
 
 .advantage__number {
+  display: block;
   margin-bottom: 25px;
   font-size: 14px;
   line-height: 21px;
@@ -22,11 +23,17 @@
 .advantage__description {
   font-size: 14px;
   line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 46px;
 }
 
 .advantage__wrapper {
   margin-left: 17px;
   margin-right: 17px;
+}
+
+.advantage__picture {
+  display: block;
 }
 
 .advantage_intro::after {
