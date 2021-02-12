@@ -1,0 +1,22 @@
+.social-networks__hashtag {
+  padding-top: 41px;
+  font-size: 21px;
+  line-height: 26px;
+  display: block;
+  margin-bottom: 42px;
+}
+
+.social-networks__wrapper {
+  display: flex;
+  width: 151px;
+}
+
+.social-networks__list {
+  list-style: none;
+}
+
+.social-networks__item {
+  background-color: $blue;
+  width: 46px;
+  height: 48px;
+}
