@@ -48,6 +48,12 @@ body {
   width: 320px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
   box-sizing: border-box;
   text-align: center;
