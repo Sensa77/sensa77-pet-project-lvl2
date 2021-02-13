@@ -19,6 +19,17 @@
 
   &--gray-background {
     background-color: $grey;
+    position: relative;
+  }
+
+  &--gray-background:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #d6d6d6;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
   }
 }
 

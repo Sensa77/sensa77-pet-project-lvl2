@@ -412,6 +412,9 @@ html {
 .page-main__greeting {
   margin-top: -27px; }
 
+.page-footer__copyright {
+  margin-bottom: 16px; }
+
 .main-nav__wrapper {
   display: flex;
   justify-content: flex-end; }
@@ -421,23 +424,65 @@ html {
 
 .main-nav__toggle {
   border: none;
-  background-color: inherit; }
+  background-color: inherit;
+  height: 56px;
+  padding: 0;
+  margin-right: 20px; }
 
 .main-nav {
   z-index: 1; }
 
 .site-list {
-  display: none; }
+  display: block;
+  width: 320px; }
+
+.site-list__wrapper {
+  padding-left: 0;
+  list-style: none; }
 
 .site-list__item {
   flex-direction: column;
   color: #fff;
-  background-color: #81b3d2; }
+  background-color: #81b3d2;
+  position: relative; }
+
+.site-list__item:not(:last-child) {
+  border-bottom: 1px solid #678fa8; }
+
+.site-list__item:not(:first-child) {
+  border-top: 1px solid #9ac2db; }
 
 .site-list__link {
   color: inherit;
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: bold; }
+
+.site-list__close {
+  border: none;
+  background-color: #81b3d2;
+  width: 22px;
+  height: 21px;
+  position: absolute;
+  right: 20px; }
+
+.site-list__close::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  left: 0; }
+
+.site-list__close::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  left: 0; }
 
 .greeting {
   background-image: url(../../img/back-mobile.png);
@@ -496,7 +541,16 @@ html {
     background-color: #81b3d2;
     color: #fff; }
   .advantage__item--gray-background {
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    position: relative; }
+  .advantage__item--gray-background:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #d6d6d6;
+    left: 20px;
+    right: 20px;
+    bottom: 0; }
 
 .advantage__title {
   margin-bottom: 18px;
@@ -614,16 +668,43 @@ html {
   display: block;
   margin-bottom: 42px; }
 
-.social-networks__wrapper {
-  display: flex;
-  width: 151px; }
-
 .social-networks__list {
-  list-style: none; }
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 84px;
+  width: 151px;
+  margin-bottom: 40px; }
 
 .social-networks__item {
   background-color: #81b3d2;
   width: 46px;
-  height: 48px; }
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  min-height: 34px; }
+
+.copyright__text {
+  display: flex;
+  position: relative;
+  padding-right: 38px;
+  align-items: center; }
+
+.copyright__text::after {
+  content: "";
+  background-image: url(../../img/htmlacademy.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  position: absolute;
+  right: 0; }
 
 /*# sourceMappingURL=style.css.map */
