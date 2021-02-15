@@ -8,16 +8,37 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="/img/logotype-mobile.png" alt="Логотип Седоны" />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav page-header__nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <a class="main-nav__logo">
+            <img
+              src="./svg/logo-sedona-mobile.svg"
+              width="102"
+              height="83"
+              alt="Логотип Седоны"
+            />
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <svg
+              version="1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="22.928"
+              height="21.982"
+            >
+              <path
+                d="M0 0h22.928v3.964H0zm0 9.009h22.928v3.964H0zm0 9.009h22.928v3.964H0z"
+                fill="#81b3d2"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="site-list visually-hidden">
+          <ul class="site-list__wrapper">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
-              <button class="site-list__close" type="button">Закрыть</button>
+              <button class="site-list__close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -33,70 +54,89 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="greeting-mini">
+      <section class="greeting page-main__greeting greeting--mini">
         <h1 class="visually-hidden">Добро пожаловать в Sedona!</h1>
         <img
-          class="greeting-mini__signature"
-          src="/img/SEDONA.png"
-          alt="Седона"
+          class="greeting__signature greeting__signature--mini"
+          src="./svg/text-sedona.svg"
+          width="229"
+          height="39"
+          alt="Добро пожаловать в Седону!"
         />
       </section>
-      <section class="aside">
+      <section class="aside aside--mg">
         <h2 class="aside__title">Фото и видео</h2>
         <p class="aside__description">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-          забыть о политике и экономике.
+          Не можете решиться на путешествие из-за курса? Фотографии помогут
+          <br />
+          вам забыть о политике и экономике.
         </p>
       </section>
       <section class="photograph">
-        <img
-          class="photograph__image"
-          src="/img/photo-1-mobile.jpg"
-          alt="Дорога"
-        />
-        <span class="photograph__signature">Неродные просторы</span>
-        <cite class="photograph__author">Автор фото: Борис</cite>
-        <img src="#" class="photograph__like-icon" />
-        <span class="photograph__likes">1350</span>
-      </section>
-      <section class="photograph">
-        <img
-          class="photograph__image"
-          src="/img/photo-2-mobile.jpg"
-          width="280"
-          height="280"
-          alt="Растительность"
-        />
-        <span class="photograph__signature">Местная растительность</span>
-        <cite class="photograph__author">Автор фото: Сергей</cite>
-        <img src="#" class="photograph__like-icon" />
-        <span class="photograph__likes">143</span>
-      </section>
-      <section class="photograph">
-        <img
-          class="photograph__image"
-          src="/img/photo-3-mobile.jpg"
-          width="280"
-          height="280"
-          alt="Дорога на север"
-        />
-        <span class="photograph__signature">Дорога на север</span>
-        <cite class="photograph__author">Автор фото: Петр</cite>
-        <img src="#" class="photograph__like-icon" />
-        <span class="photograph__likes">96</span>
-      </section>
-      <section class="photograph">
-        <img
-          class="photograph__image"
-          src="/img/photo-4-mobile.jpg"
-          width="280"
-          height="280"
-          alt="Мост дьявола"
-        />
-        <span class="photograph__signature">Мост дьявола</span>
-        <cite class="photograph__author">Автор фото: Антон</cite>
-        <img src="#" class="photograph__like-icon" />
-        <span class="photograph__likes">254</span>
+        <div class="photograph__item photograph__item-mg photograph__item--pd">
+          <div class="photograph__image-wrapper">
+            <img
+              class="photograph__image"
+              src="./img/photo-1-mobile.jpg"
+              alt="Дорога"
+              width="280"
+              height="280"
+            />
+          </div>
+          <div class="photograph__wrapper">
+            <span class="photograph__signature">Неродные просторы</span>
+            <cite class="photograph__author">Автор фото: Борис</cite>
+            <span class="photograph__likes">1350</span>
+          </div>
+        </div>
+        <div class="photograph__item photograph__item--pd">
+          <div class="photograph__image-wrapper">
+            <img
+              class="photograph__image"
+              src="./img/photo-2-mobile.jpg"
+              width="280"
+              height="280"
+              alt="Растительность"
+            />
+          </div>
+          <div class="photograph__wrapper">
+            <span class="photograph__signature">Местная растительность</span>
+            <cite class="photograph__author">Автор фото: Сергей</cite>
+            <span class="photograph__likes">143</span>
+          </div>
+        </div>
+        <div class="photograph__item photograph__item--pd">
+          <div class="photograph__image-wrapper">
+            <img
+              class="photograph__image"
+              src="./img/photo-3-mobile.jpg"
+              width="280"
+              height="280"
+              alt="Дорога на север"
+            />
+          </div>
+          <div class="photograph__wrapper">
+            <span class="photograph__signature">Дорога на север</span>
+            <cite class="photograph__author">Автор фото: Петр</cite>
+            <span class="photograph__likes">96</span>
+          </div>
+        </div>
+        <div class="photograph__item photograph__item--pd">
+          <div class="photograph__image-wrapper">
+            <img
+              class="photograph__image"
+              src="./img/photo-4-mobile.jpg"
+              width="280"
+              height="280"
+              alt="Мост дьявола"
+            />
+          </div>
+          <div class="photograph__wrapper">
+            <span class="photograph__signature">Мост дьявола</span>
+            <cite class="photograph__author">Автор фото: Антон</cite>
+            <span class="photograph__likes">254</span>
+          </div>
+        </div>
       </section>
       <section class="aside">
         <h2 class="aside__title">Вы еще сомневаетесь?</h2>

@@ -3,11 +3,23 @@
   height: 390px;
   position: relative;
   z-index: 0;
+
+  &--mini {
+    background-image: url(../../img/back-mobile.png);
+    height: 158px;
+    position: relative;
+    z-index: 0;
+    bottom: 0;
+  }
 }
 
 .greeting__signature {
   padding-top: 90px;
   box-sizing: content-box;
+
+  &--mini {
+    padding-top: 52px;
+  }
 }
 
 .greeting__intro {
