@@ -2,24 +2,26 @@
   background-color: #fff;
   padding-left: 17px;
   padding-right: 17px;
-  min-height: 191px;
   position: relative;
-  padding-top: 45px;
-
-  &--intro {
-    padding-top: 58px;
-    position: relative;
-    min-height: 210px;
-  }
+  padding-top: 40px;
 
   &--active {
     background-color: $blue;
     color: #fff;
+    height: 191px;
+  }
+
+  &--intro {
+    padding-top: 77px;
+    position: relative;
+    min-height: 230px;
   }
 
   &--gray-background {
     background-color: $grey;
     position: relative;
+    padding-top: 27px;
+    height: 168px;
   }
 
   &--gray-background:not(:last-child)::after {
@@ -34,7 +36,7 @@
 }
 
 .advantage__title {
-  margin-bottom: 18px;
+  margin-bottom: 9px;
   margin-top: 0;
   font-size: 18px;
   line-height: 26px;
@@ -42,7 +44,7 @@
 
 .advantage__number {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 21px;
 }

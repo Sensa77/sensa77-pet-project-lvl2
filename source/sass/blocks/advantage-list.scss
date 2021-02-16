@@ -2,13 +2,13 @@
   min-height: 416px;
   margin-left: 18px;
   margin-right: 18px;
-  padding-top: 26px;
+  padding-top: 29px;
   color: #000;
   background-color: #fff;
 }
 
 .advantage-list__wrapper:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .advantage-list__title {
@@ -21,7 +21,7 @@
   height: 37px;
   text-align: start;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 
   &::before {
     content: "";
