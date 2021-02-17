@@ -3,21 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" />
     <title>Sedona</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="/img/logotype-mobile.png" alt="Логотип Седоны" />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav page-header__nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <a class="main-nav__logo">
+            <img
+              src="./svg/logo-sedona-mobile.svg"
+              width="102"
+              height="83"
+              alt="Логотип Седоны"
+            />
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <svg
+              version="1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="22.928"
+              height="21.982"
+            >
+              <path
+                d="M0 0h22.928v3.964H0zm0 9.009h22.928v3.964H0zm0 9.009h22.928v3.964H0z"
+                fill="#81b3d2"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="site-list visually-hidden">
+          <ul class="site-list__wrapper">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
-              <button class="site-list__close" type="button">Закрыть</button>
+              <button class="site-list__close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -33,149 +54,157 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="greeting-mini">
+      <section class="greeting page-main__greeting greeting--mini">
         <h1 class="visually-hidden">Добро пожаловать в Sedona!</h1>
         <img
-          class="greeting-mini__signature"
-          src="/img/SEDONA.png"
-          alt="Седона"
+          class="greeting__signature greeting__signature--mini"
+          src="./svg/text-sedona.svg"
+          width="229"
+          height="39"
+          alt="Добро пожаловать в Седону!"
         />
       </section>
-      <section class="aside">
-        <h2 class="aside__title">Оставьте свой отзыв</h2>
+      <section class="aside aside--mg-form">
+        <h2 class="aside__title aside__title--mg">Оставьте свой отзыв</h2>
         <p class="aside__description">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
           посещенных вами достопримечательностях
         </p>
       </section>
       <section class="info">
-        <h3 class="info__title">Представьтесь:</h3>
-        <form class="name-form" method="POST">
-          <label class="name-form__label"
-            >Имя*:
-            <input class="name-form__input" type="text" placeholder="Пётр" />
-          </label>
-          <label class="name-form__label"
-            >Фамилия*:
-            <input class="name-form__input" type="text" placeholder="Иванов" />
-          </label>
-          <label class="name-form__label"
-            >Отчество*:
-            <input
-              class="name-form__input"
-              type="text"
-              placeholder="Александрович"
-            />
-          </label>
-        </form>
-      </section>
-      <section class="info">
-        <h3 class="info__title">Контактная информация</h3>
-        <form class="number-form" method="POST">
-          <label class="number-form__label"
-            >Контактный телефон*:
-            <input
-              class="number-form__input"
-              type="number"
-              placeholder="Введите телефон"
-            />
-          </label>
-          <label class="number-form__label"
-            >Электронная почта*:
-            <input
-              class="number-form__input"
-              type="email"
-              placeholder="Введите e-mail"
-            />
-          </label>
-        </form>
-      </section>
-      <section class="info">
-        <h3 class="info__title">Ваше общее впечатление:</h3>
-        <form class="impression-form" method="POST">
-          <label class="impression-form__label"
-            >Скорее положительное
-            <input
-              class="impression-form__input"
-              type="radio"
-              name="radio-buuton"
-              value="1"
-            />
-          </label>
-          <label class="impression-form__label"
-            >Скорее отрицательное
-            <input
-              class="impression-form__input"
-              type="radio"
-              name="radio-button"
-              value="2"
-            />
-          </label>
-          <label class="impression-form__label"
-            >Затрудняюсь ответить
-            <input
-              class="impression-form__input"
-              type="radio"
-              name="radio-buuton"
-              value="3"
-            />
-          </label>
-        </form>
-      </section>
-      <section class="info">
-        <h3 class="info__title">Посещенные достопримечательности:</р>
-        <form class="attractions" method="POST">
-          <label class="attractions__label"
-            >Мост Дьявола
-            <input
-              class="attractions__input"
-              type="checkbox"
-              name="Мост Дьявола"
-              value="1"
-            />
-          </label>
-          <label class="attractions__label"
-            >Гора-Колокол
-            <input
-              class="attractions__input"
-              type="checkbox"
-              name="Гора-Колокол"
-              value="2"
-            />
-          </label>
-          <label class="attractions__label"
-            >Слайд-парк
-            <input
-              class="attractions__input"
-              type="checkbox"
-              name="Слайд-парк"
-              value="3"
-            />
-          </label>
-          <label class="attractions__label"
-            >Красные скалы
-            <input
-              class="attractions__input"
-              type="checkbox"
-              name="Красные скалы"
-              value="4"
-            />
-          </label>
-        </form>
-      </section>
-      <section class="info">
-        <h3 class="info__title">Опишите свои эмоции:</h3>
-        <form class="emotion" method="POST">
-          <textarea
-            class="emotion__text"
-            cols="50"
-            rows="10"
-            placeholder="Опишите подробно все свои восторги"
-          ></textarea>
-        </form>
-        <button type="button" class="info__button button">
-          Отправить отзыв
-        </button>
+        <div class="info__item info__name">
+          <h3 class="info__title">Представьтесь:</h3>
+          <form class="name-form" method="POST">
+            <label class="name-form__label"
+              >Имя*:
+              <input class="name-form__input" type="text" placeholder="Пётр" />
+            </label>
+            <label class="name-form__label"
+              >Фамилия*:
+              <input
+                class="name-form__input"
+                type="text"
+                placeholder="Иванов"
+              />
+            </label>
+            <label class="name-form__label"
+              >Отчество*:
+              <input
+                class="name-form__input"
+                type="text"
+                placeholder="Александрович"
+              />
+            </label>
+          </form>
+        </div>
+        <div class="info__item info__contacts">
+          <h3 class="info__title">Контактная информация</h3>
+          <form class="number-form" method="POST">
+            <label class="number-form__label--tel"
+              ><span class="number-form__label-wp"> Контактный телефон*: </span>
+              <input
+                class="number-form__input"
+                type="tel"
+                placeholder="Введите телефон"
+              />
+            </label>
+            <label class="number-form__label--email"
+              ><span class="number-form__label-wp">Электронная почта*: </span>
+              <input
+                class="number-form__input"
+                type="email"
+                placeholder="Введите e-mail"
+              />
+            </label>
+          </form>
+        </div>
+        <div class="info__item info__impression">
+          <h3 class="info__title">Ваше общее впечатление:</h3>
+          <form class="impression-form" method="POST">
+            <label class="impression-form__label"
+              >Скорее положительное
+              <input
+                class="impression-form__input"
+                type="radio"
+                name="radio-buuton"
+                value="1"
+              />
+            </label>
+            <label class="impression-form__label"
+              >Скорее отрицательное
+              <input
+                class="impression-form__input"
+                type="radio"
+                name="radio-button"
+                value="2"
+              />
+            </label>
+            <label class="impression-form__label"
+              >Затрудняюсь ответить
+              <input
+                class="impression-form__input"
+                type="radio"
+                name="radio-buuton"
+                value="3"
+              />
+            </label>
+          </form>
+        </div>
+        <div class="info__item info__attractions">
+          <h3 class="info__title">Посещенные достопримечательности:</h3>
+          <form class="attractions" method="POST">
+            <label class="attractions__label"
+              >Мост Дьявола
+              <input
+                class="attractions__input"
+                type="checkbox"
+                name="Мост Дьявола"
+                value="1"
+              />
+            </label>
+            <label class="attractions__label"
+              >Гора-Колокол
+              <input
+                class="attractions__input"
+                type="checkbox"
+                name="Гора-Колокол"
+                value="2"
+              />
+            </label>
+            <label class="attractions__label"
+              >Слайд-парк
+              <input
+                class="attractions__input"
+                type="checkbox"
+                name="Слайд-парк"
+                value="3"
+              />
+            </label>
+            <label class="attractions__label"
+              >Красные скалы
+              <input
+                class="attractions__input"
+                type="checkbox"
+                name="Красные скалы"
+                value="4"
+              />
+            </label>
+          </form>
+        </div>
+        <div class="info__item info__emorions">
+          <h3 class="info__title">Опишите свои эмоции:</h3>
+          <form class="emotion" method="POST">
+            <textarea
+              class="emotion__text"
+              cols="50"
+              rows="10"
+              placeholder="Опишите подробно все свои восторги"
+            ></textarea>
+          </form>
+          <button type="button" class="info__button button">
+            Отправить отзыв
+          </button>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
