@@ -121,73 +121,84 @@
         <div class="info__item info__impression">
           <h3 class="info__title">Ваше общее впечатление:</h3>
           <form class="impression-form" method="POST">
-            <label class="impression-form__label"
+            <input
+              class="impression-form__input"
+              type="radio"
+              name="radio-button"
+              value="1"
+              id="radio1"
+            />
+            <label class="impression-form__label" for="radio1"
               >Скорее положительное
-              <input
-                class="impression-form__input"
-                type="radio"
-                name="radio-buuton"
-                value="1"
-              />
             </label>
-            <label class="impression-form__label"
+            <input
+              class="impression-form__input"
+              type="radio"
+              name="radio-button"
+              value="2"
+              id="radio2"
+            />
+            <label class="impression-form__label" for="radio2"
               >Скорее отрицательное
-              <input
-                class="impression-form__input"
-                type="radio"
-                name="radio-button"
-                value="2"
-              />
             </label>
-            <label class="impression-form__label"
+            <input
+              class="impression-form__input"
+              type="radio"
+              name="radio-button"
+              value="3"
+              id="radio3"
+            />
+            <label class="impression-form__label" for="radio3"
               >Затрудняюсь ответить
-              <input
-                class="impression-form__input"
-                type="radio"
-                name="radio-buuton"
-                value="3"
-              />
             </label>
           </form>
         </div>
         <div class="info__item info__attractions">
           <h3 class="info__title">Посещенные достопримечательности:</h3>
-          <form class="attractions" method="POST">
-            <label class="attractions__label"
+          <form class="attractions-form" method="POST">
+            <input
+              class="attractions-form__input"
+              type="checkbox"
+              name="Мост Дьявола"
+              value="1"
+              id="checkbox1"
+            />
+            <span class="attraction-form__checkbox"></span>
+            <label class="attractions-form__label" for="checkbox1"
               >Мост Дьявола
-              <input
-                class="attractions__input"
-                type="checkbox"
-                name="Мост Дьявола"
-                value="1"
-              />
             </label>
-            <label class="attractions__label"
+            <input
+              class="attractions-form__input"
+              type="checkbox"
+              name="Гора-Колокол"
+              value="2"
+              id="checkbox2"
+            />
+            <span class="attraction-form__checkbox"></span>
+            <label class="attractions-form__label" for="checkbox2"
               >Гора-Колокол
-              <input
-                class="attractions__input"
-                type="checkbox"
-                name="Гора-Колокол"
-                value="2"
-              />
             </label>
-            <label class="attractions__label"
+            <input
+              class="attractions-form__input"
+              type="checkbox"
+              name="Слайд-парк"
+              value="3"
+              id="checkbox3"
+            />
+            <span class="attraction-form__checkbox"></span>
+            <label class="attractions-form__label" for="checkbox3"
               >Слайд-парк
-              <input
-                class="attractions__input"
-                type="checkbox"
-                name="Слайд-парк"
-                value="3"
-              />
             </label>
-            <label class="attractions__label"
+            <input
+              class="attractions-form__input"
+              type="checkbox"
+              name="Красные скалы"
+              value="4"
+              id="checkbox4"
+            />
+            <span class="attraction-form__checkbox"></span>
+            <label class="attractions-form__label" for="checkbox4"
               >Красные скалы
-              <input
-                class="attractions__input"
-                type="checkbox"
-                name="Красные скалы"
-                value="4"
-              />
             </label>
           </form>
         </div>

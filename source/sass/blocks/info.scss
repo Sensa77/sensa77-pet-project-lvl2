@@ -24,6 +24,10 @@
   height: 286px;
 }
 
+.info__impression {
+  height: 290px;
+}
+
 .info__title {
   margin-top: 0;
   padding-top: 19px;
@@ -49,6 +53,7 @@ label {
 
 .number-form__label--tel {
   position: relative;
+  margin-bottom: 12px;
 }
 
 .number-form__label--tel::after {
@@ -88,8 +93,77 @@ label {
   margin-bottom: 7px;
 }
 
-.number-form__label--tel {
+.attractions-form__input,
+.impression-form__input {
+  position: absolute;
+  appearance: none;
+  margin-left: 0;
+}
+
+.impression-form__label,
+.attractions-form__label {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  font-weight: bold;
   margin-bottom: 12px;
+  position: relative;
+  padding-left: 70px;
+  height: 58px;
+}
+
+.impression-form__label::before {
+  content: "";
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  left: 0;
+}
+
+input[type="radio"]:checked + .impression-form__label::after {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-color: #333;
+  border-radius: 50%;
+  left: 18px;
+}
+
+.attraction-form__checkbox {
+  content: "";
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  background-color: #f2f2f2;
+  border-radius: 10%;
+  left: 0;
+}
+
+input[type="checkbox"]:checked + .attraction-form__checkbox::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 13px;
+  background-color: #231f20;
+  left: 16px;
+  transform: rotate(45deg);
+  top: 28px;
+}
+
+input[type="checkbox"]:checked + .attraction-form__checkbox::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 18px;
+  background-color: #231f20;
+  right: 14px;
+  transform: rotate(-45deg);
+  top: 24px;
 }
 
 .name-form__input::placeholder,

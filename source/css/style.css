@@ -419,8 +419,11 @@ a {
 .page-main__greeting {
   margin-top: -27px; }
 
-.aside--mg {
+.aside--mg-photo {
   margin-bottom: 24px; }
+
+.aside--mg-form {
+  margin-bottom: 16px; }
 
 .page-main__advantage {
   margin-top: 5px; }
@@ -545,14 +548,14 @@ a {
   line-height: 26px;
   padding-top: 39px; }
 
-.aside__title-photo {
+.aside__title--mg {
   margin-bottom: 23px; }
 
 .aside__description {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
-  line-height: 26px; }
+  line-height: 25px; }
 
 .aside {
   position: relative;
@@ -863,5 +866,176 @@ a {
   border: none;
   fill: #5c6870;
   padding-top: 6px; }
+
+.info {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.info__item {
+  position: relative; }
+
+.info__item::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 320px;
+  background-color: #e5e5e5;
+  left: 0; }
+
+.info__name {
+  height: 304px; }
+
+.info__contacts {
+  height: 286px; }
+
+.info__impression {
+  height: 290px; }
+
+.info__title {
+  margin-top: 0;
+  padding-top: 19px;
+  margin-bottom: 23px; }
+
+input {
+  height: 58px;
+  border: none;
+  padding-left: 22px;
+  background-color: #f2f2f2;
+  flex-grow: 1;
+  margin-left: 10px; }
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  margin-bottom: 19px;
+  flex-wrap: wrap; }
+
+.name-form {
+  text-align: start; }
+
+.number-form__input {
+  margin-left: 0;
+  position: relative; }
+
+.number-form__label--tel {
+  position: relative;
+  margin-bottom: 12px; }
+
+.number-form__label--tel::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  background-image: url(../../svg/icon-phone.svg);
+  right: 0;
+  background-repeat: no-repeat;
+  background-color: #e6e6e6;
+  bottom: 0;
+  background-position: center; }
+
+.number-form__label--email {
+  position: relative; }
+
+.number-form__label--email::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  background-image: url(../../svg/icon-mail.svg);
+  right: 0;
+  background-repeat: no-repeat;
+  background-color: #e6e6e6;
+  bottom: 0;
+  background-position: center; }
+
+.number-form__label-wp {
+  padding-left: 22px;
+  margin-bottom: 7px; }
+
+.attractions-form__input,
+.impression-form__input {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-left: 0; }
+
+.impression-form__label,
+.attractions-form__label {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  font-weight: bold;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 70px;
+  height: 58px; }
+
+.impression-form__label::before {
+  content: "";
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  left: 0; }
+
+input[type="radio"]:checked + .impression-form__label::after {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-color: #333;
+  border-radius: 50%;
+  left: 18px; }
+
+.attraction-form__checkbox {
+  content: "";
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  background-color: #f2f2f2;
+  border-radius: 10%;
+  left: 0; }
+
+input[type="checkbox"]:checked + .attraction-form__checkbox::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 13px;
+  background-color: #231f20;
+  left: 16px;
+  transform: rotate(45deg);
+  top: 28px; }
+
+input[type="checkbox"]:checked + .attraction-form__checkbox::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 18px;
+  background-color: #231f20;
+  right: 14px;
+  transform: rotate(-45deg);
+  top: 24px; }
+
+.name-form__input::-moz-placeholder, .number-form__input::-moz-placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000; }
+
+.name-form__input::placeholder,
+.number-form__input::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000; }
 
 /*# sourceMappingURL=style.css.map */
