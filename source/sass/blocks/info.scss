@@ -17,21 +17,37 @@
 }
 
 .info__name {
-  height: 304px;
+  height: 305px;
 }
 
 .info__contacts {
-  height: 286px;
+  height: 288px;
 }
 
 .info__impression {
-  height: 290px;
+  height: 288px;
+}
+
+.info__attraction {
+  height: 409px;
+}
+
+.info__emotion {
+  height: 273px;
 }
 
 .info__title {
   margin-top: 0;
   padding-top: 19px;
   margin-bottom: 23px;
+}
+
+.info__title--attraction {
+  margin-bottom: 19px;
+}
+
+.info__title--emotion {
+  margin-bottom: 20px;
 }
 
 input {
@@ -93,7 +109,7 @@ label {
   margin-bottom: 7px;
 }
 
-.attractions-form__input,
+.attraction-form__input,
 .impression-form__input {
   position: absolute;
   appearance: none;
@@ -101,15 +117,20 @@ label {
 }
 
 .impression-form__label,
-.attractions-form__label {
+.attraction-form__label {
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   position: relative;
   padding-left: 70px;
   height: 58px;
+  margin-right: 0;
+}
+
+.attraction-form__label {
+  margin-bottom: 22px;
 }
 
 .impression-form__label::before {
@@ -166,7 +187,17 @@ input[type="checkbox"]:checked + .attraction-form__checkbox::after {
   top: 24px;
 }
 
+.emotion-form__text {
+  border: none;
+  background-color: #f2f2f2;
+  width: 280px;
+  height: 160px;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
 .name-form__input::placeholder,
-.number-form__input::placeholder {
+.number-form__input::placeholder,
+.emotion-form__text::placeholder {
   @include placeholder;
 }
