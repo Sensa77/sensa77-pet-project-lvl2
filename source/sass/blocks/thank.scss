@@ -1,0 +1,36 @@
+.thank {
+  height: 323px;
+  width: 320px;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.36);
+  display: block;
+  position: fixed;
+  bottom: 50%;
+  transform: translate(0, 50%);
+}
+
+.thank__title {
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-top: 44px;
+  margin-bottom: 27px;
+}
+
+.thank__text {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 31px;
+}
+
+.thank__button-wp {
+  height: 98px;
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
