@@ -9,30 +9,7 @@
   <body>
     <header class="page-header">
       <nav class="main-nav page-header__nav">
-        <div class="main-nav__wrapper">
-          <a class="main-nav__logo">
-            <img
-              src="./svg/logo-sedona-mobile.svg"
-              width="102"
-              height="83"
-              alt="Логотип Седоны"
-            />
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <svg
-              version="1"
-              xmlns="http://www.w3.org/2000/svg"
-              width="22.928"
-              height="21.982"
-            >
-              <path
-                d="M0 0h22.928v3.964H0zm0 9.009h22.928v3.964H0zm0 9.009h22.928v3.964H0z"
-                fill="#81b3d2"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="site-list visually-hidden">
+        <div class="site-list">
           <ul class="site-list__wrapper">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -50,6 +27,29 @@
               <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
+        </div>
+        <div class="main-nav__wrapper">
+          <span class="main-nav__logo">
+            <img
+              src="./svg/logo-sedona-mobile.svg"
+              width="102"
+              height="83"
+              alt="Логотип Седоны"
+            />
+          </span>
+          <button class="main-nav__toggle" type="button">
+            <svg
+              version="1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="22.928"
+              height="21.982"
+            >
+              <path
+                d="M0 0h22.928v3.964H0zm0 9.009h22.928v3.964H0zm0 9.009h22.928v3.964H0z"
+                fill="#81b3d2"
+              />
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
@@ -221,10 +221,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="social-networks page-footer__wrapper">
-        <b class="social-networks__hashtag social-networks__hashtag--photo"
-          >#VisitSedona</b
-        >
+      <section class="social-networks social-networks--form">
+        <b class="social-networks__hashtag">#VisitSedona</b>
         <ul class="social-networks__list">
           <li>
             <a

@@ -1,13 +1,21 @@
-.social-networks__hashtag {
+.social-networks {
   padding-top: 27px;
+  padding-bottom: 16px;
+
+  &--photo {
+    padding-top: 34px;
+  }
+
+  &--form {
+    padding-top: 72px;
+  }
+}
+
+.social-networks__hashtag {
   font-size: 21px;
   line-height: 26px;
   display: block;
   margin-bottom: 36px;
-
-  &--photo {
-    padding-top: 40px;
-  }
 }
 
 .social-networks__list {

@@ -4,16 +4,17 @@
 }
 
 .main-nav__logo {
+  display: block;
   margin-right: 65px;
 }
 
 .main-nav__toggle {
   border: none;
   background-color: inherit;
-  height: 56px;
+  height: 35px;
   padding: 0;
   margin-right: 20px;
-  padding-top: 22px;
+  margin-top: 15px;
 }
 
 .main-nav {
