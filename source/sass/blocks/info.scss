@@ -210,3 +210,17 @@ input[type="checkbox"]:checked + .attraction-form__checkbox::after {
 .emotion-form__text::placeholder {
   @include placeholder;
 }
+
+.name-form__input:hover,
+.number-form__input:hover {
+  background-color: #e5e5e5;
+}
+
+.number-form__input:focus,
+.name-form__input:focus,
+.name-form__input:active,
+.number-form__input:active {
+  background-color: #fff;
+  border: 4px solid #e5e5e5;
+  outline: none;
+}

@@ -36,4 +36,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+}
+
+.social-networks__item:hover,
+.social-networks__item:focus {
+  background-color: #669ec0;
+}
+
+.social-networks__item:active {
+  background-color: #5496bd;
+  color: #88b6d1;
 }
