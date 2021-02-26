@@ -64,6 +64,12 @@ label {
   text-align: start;
 }
 
+.name-form__input,
+.number-form__input,
+.emotion-form__text {
+  border: 4px solid #f2f2f2;
+}
+
 .number-form__input {
   margin-left: 0;
   position: relative;
@@ -172,7 +178,13 @@ input[type="radio"]:checked + .impression-form__label::after {
   left: 0;
 }
 
-input[type="checkbox"]:checked + .attraction-form__checkbox::before {
+.attraction-form__checkbox:hover {
+  background-color: red;
+}
+
+input[type="checkbox"]:checked
+  + .attraction-form__label
+  .attraction-form__checkbox::before {
   content: "";
   position: absolute;
   display: block;
@@ -184,7 +196,9 @@ input[type="checkbox"]:checked + .attraction-form__checkbox::before {
   top: 28px;
 }
 
-input[type="checkbox"]:checked + .attraction-form__checkbox::after {
+input[type="checkbox"]:checked
+  + .attraction-form__label
+  .attraction-form__checkbox::after {
   content: "";
   position: absolute;
   display: block;
@@ -197,7 +211,6 @@ input[type="checkbox"]:checked + .attraction-form__checkbox::after {
 }
 
 .emotion-form__text {
-  border: none;
   background-color: #f2f2f2;
   width: 280px;
   height: 160px;
@@ -212,15 +225,42 @@ input[type="checkbox"]:checked + .attraction-form__checkbox::after {
 }
 
 .name-form__input:hover,
-.number-form__input:hover {
+.number-form__input:hover,
+.emotion-form__text:hover {
   background-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 .number-form__input:focus,
 .name-form__input:focus,
+.emotion-form__text:focus,
 .name-form__input:active,
-.number-form__input:active {
+.number-form__input:active,
+.emotion-form__text:active {
   background-color: #fff;
   border: 4px solid #e5e5e5;
   outline: none;
+}
+
+.impression-form__label:hover::before,
+.impression-form__label:focus::before,
+.attraction-form__checkbox:hover,
+.attraction-form__checkbox:focus {
+  background-color: #e5e5e5;
+}
+
+.impression-form__label:active::before,
+.attraction-form__checkbox:active {
+  background-color: #d5d5d5;
+}
+
+input[type="radio"]:checked + .impression-form__label:focus::after,
+input[type="radio"]:checked + .impression-form__label:active::after,
+input[type="checkbox"]:checked
+  + .attraction-form__label
+  .attraction-form__checkbox:active:before,
+input[type="checkbox"]:checked
+  + .attraction-form__label
+  .attraction-form__checkbox:active::after {
+  background-color: #a4a4a4;
 }

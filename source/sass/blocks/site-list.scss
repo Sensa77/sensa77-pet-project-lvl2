@@ -42,33 +42,32 @@
 
 .site-list__close {
   border: none;
-  background-color: $blue;
-  width: 22px;
-  height: 21px;
+  background-color: transparent;
+  width: 27px;
+  height: 27px;
   position: absolute;
   right: 20px;
+  top: 13px;
+  padding: 0;
 }
 
-.site-list__close::before {
-  content: "";
-  position: absolute;
-  width: 27px;
-  height: 4px;
-  background-color: #fff;
-  transform: rotate(45deg);
-  left: 0;
-  top: 25px;
-}
-
+.site-list__close::before,
 .site-list__close::after {
   content: "";
   position: absolute;
   width: 27px;
   height: 4px;
   background-color: #fff;
-  transform: rotate(-45deg);
   left: 0;
-  top: 25px;
+  top: 50%;
+}
+
+.site-list__close::before {
+  transform: translate(0, -50%) rotate(45deg);
+}
+
+.site-list__close::after {
+  transform: translate(0, -50%) rotate(-45deg);
 }
 
 .site-list__item:hover,
