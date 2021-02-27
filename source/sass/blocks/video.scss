@@ -86,3 +86,14 @@
   fill: #5c6870;
   padding-top: 6px;
 }
+
+.video__panel-bt:hover,
+.video__panel-bt:focus {
+  fill: #333;
+  outline: none;
+}
+
+.video__panel-bt:active {
+  fill: #b8b8b8;
+  outline: none;
+}

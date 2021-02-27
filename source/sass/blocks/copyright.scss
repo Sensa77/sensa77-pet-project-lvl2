@@ -21,3 +21,12 @@
   position: absolute;
   right: 0;
 }
+
+.copyright__text:hover::after,
+.copyright__text:focus::after {
+  background-image: url(../../img/academy-blue.png);
+}
+
+.copyright__text:active::after {
+  background-image: url(../../img/academy-grey.png);
+}

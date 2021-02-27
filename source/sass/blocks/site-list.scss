@@ -1,6 +1,10 @@
 .site-list {
-  display: block;
+  display: none;
   width: 320px;
+}
+
+.site-list--show {
+  display: block;
 }
 
 .site-list__wrapper {
@@ -49,6 +53,7 @@
   right: 20px;
   top: 13px;
   padding: 0;
+  outline: none;
 }
 
 .site-list__close::before,
