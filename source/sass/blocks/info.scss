@@ -178,10 +178,6 @@ input[type="radio"]:checked + .impression-form__label::after {
   left: 0;
 }
 
-.attraction-form__checkbox:hover {
-  background-color: red;
-}
-
 input[type="checkbox"]:checked
   + .attraction-form__label
   .attraction-form__checkbox::before {
@@ -242,10 +238,14 @@ input[type="checkbox"]:checked
   outline: none;
 }
 
-.impression-form__label:hover::before,
-.impression-form__label:focus::before,
-.attraction-form__checkbox:hover,
-.attraction-form__checkbox:focus {
+.impression-form__input:hover + .impression-form__label::before,
+.impression-form__input:focus + .impression-form__label::before,
+.attraction-form__input:hover
+  + .attraction-form__label
+  .attraction-form__checkbox,
+.attraction-form__input:focus
+  + .attraction-form__label
+  .attraction-form__checkbox {
   background-color: #e5e5e5;
 }
 
