@@ -70,3 +70,31 @@
   left: 0;
   top: 0;
 }
+
+@media (min-width: 768px) {
+  .advantage__item {
+    width: 256px;
+    height: inherit;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 45px;
+
+    &--intro::after {
+      display: none;
+    }
+  }
+
+  .advantage__wrapper {
+    display: flex;
+    height: 256px;
+    width: 768px;
+  }
+
+  .advantage__picture {
+    width: 511px;
+  }
+
+  .advantage__number {
+    margin-bottom: 22px;
+  }
+}

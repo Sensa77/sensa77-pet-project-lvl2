@@ -13,3 +13,13 @@
 .page-main__advantage {
   margin-top: 5px;
 }
+
+@media (min-width: 768px) {
+  .page-main__greeting {
+    margin-top: -5px;
+  }
+
+  .page-main__advantage {
+    margin-top: 50px;
+  }
+}

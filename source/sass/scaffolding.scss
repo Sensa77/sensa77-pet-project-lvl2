@@ -75,3 +75,9 @@ a {
   height: 1px;
   margin: -1px;
 }
+
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}

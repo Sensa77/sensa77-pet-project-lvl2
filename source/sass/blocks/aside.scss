@@ -23,3 +23,17 @@
   z-index: 0;
   padding-top: 39px;
 }
+
+@media (min-width: 768px) {
+  .aside {
+    padding-top: 49px;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+
+  .aside__title {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 31px;
+  }
+}

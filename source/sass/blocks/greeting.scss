@@ -38,3 +38,22 @@
   left: 0;
   bottom: 0;
 }
+
+@media (min-width: 768px) {
+  .greeting {
+    background-image: url(../../img/back-desktop.jpg);
+    height: 518px;
+    margin-top: 0;
+  }
+
+  .greeting__signature {
+    padding-top: 76px;
+  }
+
+  .greeting::after {
+    content: "";
+    background-image: url(../../img/intro-triangle-tablet.png);
+    min-width: 768px;
+    height: 57px;
+  }
+}

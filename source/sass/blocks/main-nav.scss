@@ -20,3 +20,21 @@
 .main-nav {
   z-index: 1;
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    min-height: 56px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0;
+  }
+}
