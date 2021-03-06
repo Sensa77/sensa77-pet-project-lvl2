@@ -21,3 +21,9 @@
   background-color: #5496bd;
   color: #94b9d2;
 }
+
+@media (min-width: 768px) {
+  .button--search {
+    width: 459px;
+  }
+}

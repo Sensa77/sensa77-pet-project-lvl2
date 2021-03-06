@@ -13,3 +13,14 @@
   left: 0;
   z-index: 0;
 }
+
+@media (min-width: 768px) {
+  .map__google {
+    width: 768px;
+  }
+
+  .map__image {
+    width: 768px;
+    height: 350px;
+  }
+}

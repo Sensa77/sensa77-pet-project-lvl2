@@ -84,10 +84,18 @@
     }
   }
 
+  .advantage__item::after {
+    display: none;
+  }
+
   .advantage__wrapper {
     display: flex;
     height: 256px;
     width: 768px;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
   }
 
   .advantage__picture {
@@ -96,5 +104,9 @@
 
   .advantage__number {
     margin-bottom: 22px;
+  }
+
+  .advantage__description {
+    width: 170px;
   }
 }

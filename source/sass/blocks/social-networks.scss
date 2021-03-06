@@ -48,3 +48,23 @@
   background-color: #5496bd;
   color: #88b6d1;
 }
+
+@media (min-width: 768px) {
+  .social-networks {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 59px;
+    padding-left: 59px;
+    padding-bottom: 36px;
+  }
+
+  .social-networks__list {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .social-networks__hashtag {
+    margin-bottom: 0;
+  }
+}

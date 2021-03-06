@@ -30,3 +30,10 @@
 .copyright__text:active::after {
   background-image: url(../../img/academy-grey.png);
 }
+
+@media (min-width: 768px) {
+  .copyright__text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
