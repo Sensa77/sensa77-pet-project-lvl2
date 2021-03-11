@@ -11,21 +11,25 @@
       <nav class="main-nav page-header__nav">
         <div class="site-list">
           <ul class="site-list__wrapper">
-            <li class="site-list__item">
-              <a class="site-list__link" href="./index.html">Главная</a>
-              <button class="site-list__close" type="button">
-                <span class="visually-hidden">Закрыть</span>
-              </button>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="./photo.html">Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="./form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML Academy</a>
-            </li>
+            <ul class="site-list__wrapper--left">
+              <li class="site-list__item">
+                <a class="site-list__link" href="./index.html">Главная</a>
+                <button class="site-list__close" type="button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="./photo.html">Фото и видео</a>
+              </li>
+            </ul>
+            <ul class="site-list__wrapper--right">
+              <li class="site-list__item">
+                <a class="site-list__link" href="./form.html">Форма отзыва</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
           </ul>
         </div>
         <div class="main-nav__wrapper">
@@ -64,77 +68,90 @@
           alt="Добро пожаловать в Седону!"
         />
       </section>
-      <section class="aside aside--mg-photo">
-        <h2 class="aside__title aside__title--mg">Фото и видео</h2>
+      <section class="aside aside--mg-photo aside--photo">
+        <h2 class="aside__title aside__title--photo">Фото и видео</h2>
         <p class="aside__description">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут
-          <br />
-          вам забыть о политике и экономике.
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+          забыть о политике и экономике.
         </p>
       </section>
       <section class="photograph">
-        <div class="photograph__item photograph__item--pd">
-          <div class="photograph__image-wrapper">
+        <div class="photograph__item photograph__item--main">
+          <div
+            class="photograph__image-wrapper photograph__image-wrapper--main"
+          >
             <img
-              class="photograph__image"
+              class="photograph__image photograph__image--main"
               src="./img/photo-1-mobile.jpg"
               alt="Дорога"
               width="280"
               height="280"
             />
           </div>
-          <div class="photograph__wrapper">
-            <span class="photograph__signature">Неродные просторы</span>
-            <cite class="photograph__author">Автор фото: Борис</cite>
-            <span class="photograph__likes">1350</span>
+          <div class="photograph__wrapper photograph__wrapper--main">
+            <div class="photograph__signature--wp">
+              <span class="photograph__signature">Неродные просторы</span>
+              <cite class="photograph__author">Автор фото: Борис</cite>
+            </div>
+            <div class="photograph__likes">1350</div>
           </div>
         </div>
-        <div class="photograph__item photograph__item--pd">
-          <div class="photograph__image-wrapper">
-            <img
-              class="photograph__image"
-              src="./img/photo-2-mobile.jpg"
-              width="280"
-              height="280"
-              alt="Растительность"
-            />
+        <div class="photograph__cards">
+          <div class="photograph__item photograph__item--pd">
+            <div class="photograph__image-wrapper">
+              <img
+                class="photograph__image"
+                src="./img/photo-2-mobile.jpg"
+                width="280"
+                height="280"
+                alt="Растительность"
+              />
+            </div>
+            <div class="photograph__wrapper">
+              <div class="photograph__signature--wp">
+                <span class="photograph__signature"
+                  >Местная растительность</span
+                >
+                <cite class="photograph__author">Автор фото: Сергей</cite>
+              </div>
+              <div class="photograph__likes">143</div>
+            </div>
           </div>
-          <div class="photograph__wrapper">
-            <span class="photograph__signature">Местная растительность</span>
-            <cite class="photograph__author">Автор фото: Сергей</cite>
-            <span class="photograph__likes">143</span>
+          <div class="photograph__item">
+            <div class="photograph__image-wrapper">
+              <img
+                class="photograph__image"
+                src="./img/photo-3-mobile.jpg"
+                width="280"
+                height="280"
+                alt="Дорога на север"
+              />
+            </div>
+            <div class="photograph__wrapper">
+              <div class="photograph__signature--wp">
+                <span class="photograph__signature">Дорога на север</span>
+                <cite class="photograph__author">Автор фото: Петр</cite>
+              </div>
+              <div class="photograph__likes">96</div>
+            </div>
           </div>
-        </div>
-        <div class="photograph__item photograph__item--pd">
-          <div class="photograph__image-wrapper">
-            <img
-              class="photograph__image"
-              src="./img/photo-3-mobile.jpg"
-              width="280"
-              height="280"
-              alt="Дорога на север"
-            />
-          </div>
-          <div class="photograph__wrapper">
-            <span class="photograph__signature">Дорога на север</span>
-            <cite class="photograph__author">Автор фото: Петр</cite>
-            <span class="photograph__likes">96</span>
-          </div>
-        </div>
-        <div class="photograph__item photograph__item--pd">
-          <div class="photograph__image-wrapper">
-            <img
-              class="photograph__image"
-              src="./img/photo-4-mobile.jpg"
-              width="280"
-              height="280"
-              alt="Мост дьявола"
-            />
-          </div>
-          <div class="photograph__wrapper">
-            <span class="photograph__signature">Мост дьявола</span>
-            <cite class="photograph__author">Автор фото: Антон</cite>
-            <span class="photograph__likes">254</span>
+          <div class="photograph__item photograph__item--pd">
+            <div class="photograph__image-wrapper">
+              <img
+                class="photograph__image"
+                src="./img/photo-4-mobile.jpg"
+                width="280"
+                height="280"
+                alt="Мост дьявола"
+              />
+            </div>
+            <div class="photograph__wrapper">
+              <div class="photograph__signature--wp">
+                <span class="photograph__signature">Мост дьявола</span>
+                <cite class="photograph__author">Автор фото: Антон</cite>
+              </div>
+              <div class="photograph__likes">254</div>
+            </div>
           </div>
         </div>
       </section>
@@ -142,8 +159,8 @@
         <div class="video__wrapper-text">
           <h2 class="video__title">Вы еще сомневаетесь?</h2>
           <p class="video__description">
-            Смотрите видеопрезентацию и <br />
-            скорее за билетами, пока они не подорожали в очередной раз!
+            Смотрите видеопрезентацию и скорее за билетами, пока они не
+            подорожали в очередной раз!
           </p>
         </div>
         <img
@@ -154,7 +171,6 @@
           height="201"
         />
         <div class="video__panel">
-          <div class="video__panel-time"></div>
           <div class="video__panel-control">
             <button type="button" class="video__panel-bt">
               <svg
@@ -168,6 +184,7 @@
                 />
               </svg>
             </button>
+            <div class="video__panel-time"></div>
             <div class="video__panel-bt-wrapper">
               <button type="button" class="video__panel-bt">
                 <svg

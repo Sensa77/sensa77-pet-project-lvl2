@@ -3,8 +3,6 @@
   line-height: 26px;
   margin-bottom: 28px;
   margin-top: 0;
-  font-size: 18px;
-  line-height: 26px;
 }
 
 .aside__title--mg {
@@ -29,11 +27,27 @@
     padding-top: 49px;
     padding-right: 110px;
     padding-left: 110px;
+
+    &--photo {
+      padding-top: 74px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .aside__title {
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 31px;
+
+    &--photo {
+      font-size: 30px;
+    }
+  }
+
+  .aside__description {
+    width: 500px;
+    text-align: center;
   }
 }

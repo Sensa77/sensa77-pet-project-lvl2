@@ -1,13 +1,10 @@
 .photograph__item {
   border-top: 1px solid #e5e5e5;
-  min-height: 414px;
-
-  &--pd {
-    padding-top: 22px;
-    padding-bottom: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  height: 414px;
+  padding-top: 22px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .photograph__item:last-child {
@@ -54,4 +51,71 @@
   height: 21px;
   background-repeat: no-repeat;
   left: 0;
+}
+
+@media (min-width: 768px) {
+  .photograph__item {
+    border: none;
+    padding: 0;
+    height: 347px;
+    width: 324px;
+
+    &--main {
+      width: 768px;
+      height: auto;
+      padding-right: 60px;
+      padding-left: 60px;
+      padding-bottom: 0;
+      padding-top: 22px;
+    }
+  }
+
+  .photograph__image {
+    height: 267px;
+    width: 324px;
+
+    &--main {
+      height: 400px;
+      width: 650px;
+    }
+  }
+
+  .photograph__image-wrapper {
+    margin-bottom: 0;
+    height: 267px;
+
+    &--main {
+      height: 400px;
+      width: 648px;
+    }
+  }
+
+  .photograph__wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    height: 80px;
+    padding-top: 16px;
+    padding-left: 19px;
+    padding-right: 24px;
+
+    &--main {
+      width: 648px;
+      padding-top: 16px;
+      padding-left: 19px;
+      padding-right: 15px;
+    }
+  }
+
+  .photograph__likes {
+    padding-top: 13px;
+  }
+
+  .photograph__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }

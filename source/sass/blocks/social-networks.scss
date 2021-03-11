@@ -53,7 +53,7 @@
   .social-networks {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     padding-right: 59px;
     padding-left: 59px;
     padding-bottom: 36px;
@@ -62,6 +62,7 @@
   .social-networks__list {
     margin-left: 0;
     margin-bottom: 0;
+    margin-top: 4px;
   }
 
   .social-networks__hashtag {

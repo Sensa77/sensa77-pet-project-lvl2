@@ -44,10 +44,19 @@
     background-image: url(../../img/back-desktop.jpg);
     height: 518px;
     margin-top: 0;
+
+    &--mini {
+      height: 290px;
+    }
   }
 
   .greeting__signature {
-    padding-top: 76px;
+    padding-top: 93px;
+
+    &--mini {
+      width: 457px;
+      height: 79px;
+    }
   }
 
   .greeting::after {
