@@ -28,7 +28,8 @@
     padding-right: 110px;
     padding-left: 110px;
 
-    &--photo {
+    &--photo,
+    &--form {
       padding-top: 74px;
       display: flex;
       flex-direction: column;
@@ -41,7 +42,8 @@
     line-height: 26px;
     margin-bottom: 31px;
 
-    &--photo {
+    &--photo,
+    &--form {
       font-size: 30px;
     }
   }
@@ -49,5 +51,9 @@
   .aside__description {
     width: 500px;
     text-align: center;
+
+    &--form {
+      width: 490px;
+    }
   }
 }

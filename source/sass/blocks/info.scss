@@ -40,7 +40,6 @@
 
 .info__title {
   margin-top: 0;
-
   margin-bottom: 23px;
 }
 
@@ -263,4 +262,123 @@ input[type="checkbox"]:checked
   + .attraction-form__label
   .attraction-form__checkbox:active::after {
   background-color: #a4a4a4;
+}
+
+@media (min-width: 768px) {
+  .info__wrapper-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    width: 688px;
+    padding-left: 25px;
+  }
+
+  .info__title {
+    margin-bottom: 57px;
+    font-size: 21px;
+    line-height: 26px;
+
+    &--start {
+      text-align: start;
+    }
+
+    &--contacts {
+      text-align: center;
+      position: relative;
+      margin-bottom: 24px;
+    }
+
+    &--attraction {
+      position: relative;
+    }
+
+    &--contacts::before,
+    &--contacts::after,
+    &--attraction::before,
+    &--attraction::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 124px;
+      background-color: #dbdbdb;
+      top: 12px;
+    }
+
+    &--contacts::before {
+      left: 15px;
+    }
+
+    &--contacts::after {
+      right: 0;
+    }
+
+    &--attraction::before {
+      top: 25px;
+      left: 41px;
+    }
+
+    &--attraction::after {
+      top: 25px;
+      right: 40px;
+    }
+  }
+
+  .info__impression {
+    order: 0;
+    height: auto;
+  }
+
+  .info__impression::after {
+    content: "";
+    width: 1px;
+    height: 293px;
+    background-color: #dbdbdb;
+    position: absolute;
+    top: 22px;
+    left: 53%;
+  }
+
+  .impression-form {
+    padding-left: 14px;
+  }
+
+  .impression-form__label {
+    margin-bottom: 20px;
+  }
+
+  .info__name {
+    order: 1;
+    height: auto;
+  }
+
+  .info__contacts {
+    order: 2;
+    width: 664px;
+  }
+
+  .info__item::before {
+    display: none;
+  }
+
+  .number-form__label--tel {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .number-form__input {
+    width: 664px;
+  }
+
+  .info__attraction {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .attraction-form__wrapper {
+    display: flex;
+    width: 457px;
+    justify-content: space-between;
+  }
 }

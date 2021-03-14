@@ -11,21 +11,25 @@
       <nav class="main-nav page-header__nav">
         <div class="site-list">
           <ul class="site-list__wrapper">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-              <button class="site-list__close" type="button">
-                <span class="visually-hidden">Закрыть</span>
-              </button>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML Academy</a>
-            </li>
+            <ul class="site-list__wrapper--left">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">Главная</a>
+                <button class="site-list__close" type="button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">Фото и видео</a>
+              </li>
+            </ul>
+            <ul class="site-list__wrapper--right">
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
           </ul>
         </div>
         <div class="main-nav__wrapper">
@@ -64,140 +68,157 @@
           alt="Добро пожаловать в Седону!"
         />
       </section>
-      <section class="aside aside--mg-form">
-        <h2 class="aside__title aside__title--mg">Оставьте свой отзыв</h2>
-        <p class="aside__description">
+      <section class="aside aside--mg-form aside--form">
+        <h2 class="aside__title aside__title--form">Оставьте свой отзыв</h2>
+        <p class="aside__description aside__description--form">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
           посещенных вами достопримечательностях
         </p>
       </section>
       <section class="info">
-        <div class="info__item info__name">
-          <h3 class="info__title">Представьтесь:</h3>
-          <form class="name-form" method="POST">
-            <label class="name-form__label"
-              >Имя*:
-              <input class="name-form__input" type="text" placeholder="Пётр" />
-            </label>
-            <label class="name-form__label"
-              >Фамилия*:
+        <div class="info__wrapper-flex">
+          <div class="info__item info__name">
+            <h3 class="info__title info__title--start">Представьтесь:</h3>
+            <form class="name-form" method="POST">
+              <label class="name-form__label"
+                >Имя*:
+                <input
+                  class="name-form__input"
+                  type="text"
+                  placeholder="Пётр"
+                />
+              </label>
+              <label class="name-form__label"
+                >Фамилия*:
+                <input
+                  class="name-form__input"
+                  type="text"
+                  placeholder="Иванов"
+                />
+              </label>
+              <label class="name-form__label"
+                >Отчество*:
+                <input
+                  class="name-form__input"
+                  type="text"
+                  placeholder="Александрович"
+                />
+              </label>
+            </form>
+          </div>
+          <div class="info__item info__contacts info__contacts-margin">
+            <h3 class="info__title info__title--contacts">
+              Контактная информация
+            </h3>
+            <form class="number-form" method="POST">
+              <label class="number-form__label--tel"
+                ><span class="number-form__label-wp">
+                  Контактный телефон*:
+                </span>
+                <input
+                  class="number-form__input"
+                  type="tel"
+                  placeholder="Введите телефон"
+                />
+              </label>
+              <label class="number-form__label--email"
+                ><span class="number-form__label-wp">Электронная почта*: </span>
+                <input
+                  class="number-form__input"
+                  type="email"
+                  placeholder="Введите e-mail"
+                />
+              </label>
+            </form>
+          </div>
+          <div class="info__item info__impression">
+            <h3 class="info__title info__title--start">
+              Ваше общее впечатление:
+            </h3>
+            <form class="impression-form" method="POST">
               <input
-                class="name-form__input"
-                type="text"
-                placeholder="Иванов"
+                class="impression-form__input"
+                type="radio"
+                name="radio-button"
+                value="1"
+                id="radio1"
               />
-            </label>
-            <label class="name-form__label"
-              >Отчество*:
+              <label class="impression-form__label" for="radio1"
+                >Скорее положительное
+              </label>
               <input
-                class="name-form__input"
-                type="text"
-                placeholder="Александрович"
+                class="impression-form__input"
+                type="radio"
+                name="radio-button"
+                value="2"
+                id="radio2"
               />
-            </label>
-          </form>
+              <label class="impression-form__label" for="radio2"
+                >Скорее отрицательное
+              </label>
+              <input
+                class="impression-form__input"
+                type="radio"
+                name="radio-button"
+                value="3"
+                id="radio3"
+              />
+              <label class="impression-form__label" for="radio3"
+                >Затрудняюсь ответить
+              </label>
+            </form>
+          </div>
         </div>
-        <div class="info__item info__contacts">
-          <h3 class="info__title">Контактная информация</h3>
-          <form class="number-form" method="POST">
-            <label class="number-form__label--tel"
-              ><span class="number-form__label-wp"> Контактный телефон*: </span>
-              <input
-                class="number-form__input"
-                type="tel"
-                placeholder="Введите телефон"
-              />
-            </label>
-            <label class="number-form__label--email"
-              ><span class="number-form__label-wp">Электронная почта*: </span>
-              <input
-                class="number-form__input"
-                type="email"
-                placeholder="Введите e-mail"
-              />
-            </label>
-          </form>
-        </div>
-        <div class="info__item info__impression">
-          <h3 class="info__title">Ваше общее впечатление:</h3>
-          <form class="impression-form" method="POST">
-            <input
-              class="impression-form__input"
-              type="radio"
-              name="radio-button"
-              value="1"
-              id="radio1"
-            />
-            <label class="impression-form__label" for="radio1"
-              >Скорее положительное
-            </label>
-            <input
-              class="impression-form__input"
-              type="radio"
-              name="radio-button"
-              value="2"
-              id="radio2"
-            />
-            <label class="impression-form__label" for="radio2"
-              >Скорее отрицательное
-            </label>
-            <input
-              class="impression-form__input"
-              type="radio"
-              name="radio-button"
-              value="3"
-              id="radio3"
-            />
-            <label class="impression-form__label" for="radio3"
-              >Затрудняюсь ответить
-            </label>
-          </form>
-        </div>
-        <div class="info__item info__attraction">
+        <div class="info__item info__attraction info__attraction-margin">
           <h3 class="info__title info__title--attraction">
-            Посещенные достопримечательности:
+            Посещенные <br />
+            достопримечательности:
           </h3>
           <form class="attraction-form" method="POST">
-            <input
-              class="attraction-form__input"
-              type="checkbox"
-              name="Мост Дьявола"
-              value="1"
-              id="checkbox1"
-            /><label class="attraction-form__label" for="checkbox1">
-              <span class="attraction-form__checkbox"></span>
-              Мост Дьявола
-            </label>
-            <input
-              class="attraction-form__input"
-              type="checkbox"
-              name="Гора-Колокол"
-              value="2"
-              id="checkbox2"
-            /><label class="attraction-form__label" for="checkbox2">
-              <span class="attraction-form__checkbox"></span>
-              Гора-Колокол
-            </label>
-            <input
-              class="attraction-form__input"
-              type="checkbox"
-              name="Слайд-парк"
-              value="3"
-              id="checkbox3"
-            /><label class="attraction-form__label" for="checkbox3">
-              <span class="attraction-form__checkbox"></span>
-              Слайд-парк
-            </label>
-            <input
-              class="attraction-form__input"
-              type="checkbox"
-              name="Красные скалы"
-              value="4"
-              id="checkbox4"
-            /><label class="attraction-form__label" for="checkbox4">
-              <span class="attraction-form__checkbox"></span>
-              Красные скалы
-            </label>
+            <div class="attraction-form__wrapper">
+              <input
+                class="attraction-form__input"
+                type="checkbox"
+                name="Мост Дьявола"
+                value="1"
+                id="checkbox1"
+              /><label class="attraction-form__label" for="checkbox1">
+                <span class="attraction-form__checkbox"></span>
+                Мост Дьявола
+              </label>
+              <input
+                class="attraction-form__input"
+                type="checkbox"
+                name="Гора-Колокол"
+                value="2"
+                id="checkbox2"
+              /><label class="attraction-form__label" for="checkbox2">
+                <span class="attraction-form__checkbox"></span>
+                Гора-Колокол
+              </label>
+            </div>
+            <div class="attraction-form__wrapper">
+              <input
+                class="attraction-form__input"
+                type="checkbox"
+                name="Слайд-парк"
+                value="3"
+                id="checkbox3"
+              /><label class="attraction-form__label" for="checkbox3">
+                <span class="attraction-form__checkbox"></span>
+                Слайд-парк
+              </label>
+              <input
+                class="attraction-form__input"
+                type="checkbox"
+                name="Красные скалы"
+                value="4"
+                id="checkbox4"
+              /><label class="attraction-form__label" for="checkbox4">
+                <span class="attraction-form__checkbox"></span>
+                Красные скалы
+              </label>
+            </div>
           </form>
         </div>
         <div class="info__item info__emotion">
