@@ -175,50 +175,46 @@
             достопримечательности:
           </h3>
           <form class="attraction-form" method="POST">
-            <div class="attraction-form__wrapper">
-              <input
-                class="attraction-form__input"
-                type="checkbox"
-                name="Мост Дьявола"
-                value="1"
-                id="checkbox1"
-              /><label class="attraction-form__label" for="checkbox1">
-                <span class="attraction-form__checkbox"></span>
-                Мост Дьявола
-              </label>
-              <input
-                class="attraction-form__input"
-                type="checkbox"
-                name="Гора-Колокол"
-                value="2"
-                id="checkbox2"
-              /><label class="attraction-form__label" for="checkbox2">
-                <span class="attraction-form__checkbox"></span>
-                Гора-Колокол
-              </label>
-            </div>
-            <div class="attraction-form__wrapper">
-              <input
-                class="attraction-form__input"
-                type="checkbox"
-                name="Слайд-парк"
-                value="3"
-                id="checkbox3"
-              /><label class="attraction-form__label" for="checkbox3">
-                <span class="attraction-form__checkbox"></span>
-                Слайд-парк
-              </label>
-              <input
-                class="attraction-form__input"
-                type="checkbox"
-                name="Красные скалы"
-                value="4"
-                id="checkbox4"
-              /><label class="attraction-form__label" for="checkbox4">
-                <span class="attraction-form__checkbox"></span>
-                Красные скалы
-              </label>
-            </div>
+            <input
+              class="attraction-form__input"
+              type="checkbox"
+              name="Мост Дьявола"
+              value="1"
+              id="checkbox1"
+            /><label class="attraction-form__label" for="checkbox1">
+              <span class="attraction-form__checkbox"></span>
+              Мост Дьявола
+            </label>
+            <input
+              class="attraction-form__input"
+              type="checkbox"
+              name="Гора-Колокол"
+              value="2"
+              id="checkbox2"
+            /><label class="attraction-form__label" for="checkbox2">
+              <span class="attraction-form__checkbox"></span>
+              Гора-Колокол
+            </label>
+            <input
+              class="attraction-form__input"
+              type="checkbox"
+              name="Слайд-парк"
+              value="3"
+              id="checkbox3"
+            /><label class="attraction-form__label" for="checkbox3">
+              <span class="attraction-form__checkbox"></span>
+              Слайд-парк
+            </label>
+            <input
+              class="attraction-form__input"
+              type="checkbox"
+              name="Красные скалы"
+              value="4"
+              id="checkbox4"
+            /><label class="attraction-form__label" for="checkbox4">
+              <span class="attraction-form__checkbox"></span>
+              Красные скалы
+            </label>
           </form>
         </div>
         <div class="info__item info__emotion">
@@ -232,9 +228,12 @@
             ></textarea>
           </form>
         </div>
-        <button type="button" class="info__button button">
-          Отправить отзыв
-        </button>
+        <div class="info__post">
+          <button type="button" class="info__button button button--info">
+            Отправить отзыв
+          </button>
+          <span class="info__regulations">* - Обязательные поля</span>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
