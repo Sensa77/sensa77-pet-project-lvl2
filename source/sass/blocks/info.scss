@@ -373,11 +373,17 @@ input[type="checkbox"]:checked
   .info__contacts {
     order: 2;
     width: 664px;
+    margin-left: 14px;
+  }
+
+  .name-form input {
+    padding-left: 18px;
   }
 
   .info__item::before {
     display: none;
   }
+
 
   .number-form__label--tel {
     flex-direction: column;

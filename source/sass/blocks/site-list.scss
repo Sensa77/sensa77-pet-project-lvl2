@@ -123,6 +123,10 @@
     color: #000;
     font-size: 14px;
     line-height: 26px;
+
+    &--active {
+      color: #766357;
+    }
   }
 
   .site-list__close {
@@ -143,5 +147,24 @@
 
   .site-list__link {
     padding-top: 13px;
+  }
+
+  .site-list__item:hover,
+  .site-list__item:focus {
+    background-color: inherit;
+    color: $blue;
+  }
+
+  .site-list__item:active {
+    color: #cacaca;
+  }
+
+  .site-list__item--active:hover,
+  .site-list__item--active:focus {
+    color: #604e43;
+  }
+
+  .site-list__item--active:active {
+    color: #dbd8d5;
   }
 }

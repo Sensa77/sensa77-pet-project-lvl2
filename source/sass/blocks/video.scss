@@ -35,8 +35,7 @@
   position: absolute;
   width: 280px;
   height: 45px;
-  opacity: 0.6;
-  background-color: #000;
+  background-color: rgba($color: #000000, $alpha: 0.6);
   top: -45px;
   left: 0;
 }
@@ -169,5 +168,14 @@
 
   .video__panel-bt-wrapper {
     width: 95px;
+  }
+
+  .video__panel-bt:hover,
+  .video__panel-bt:focus {
+    fill: #c2c2c2;
+  }
+
+  .video__panel-bt:active {
+    fill: #949494;
   }
 }

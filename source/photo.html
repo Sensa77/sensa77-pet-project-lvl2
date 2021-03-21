@@ -18,7 +18,7 @@
                   <span class="visually-hidden">Закрыть</span>
                 </button>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a class="site-list__link" href="./photo.html">Фото и видео</a>
               </li>
             </ul>
@@ -34,12 +34,22 @@
         </div>
         <div class="main-nav__wrapper">
           <span class="main-nav__logo">
-            <img
-              src="./svg/logo-sedona-mobile.svg"
-              width="102"
-              height="83"
-              alt="Логотип Седоны"
-            />
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="./svg/logo-sedona-desktop.svg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="./svg/logo-sedona-tablet.svg"
+              />
+              <img
+                src="./svg/logo-sedona-mobile.svg"
+                width="102"
+                height="83"
+                alt="Логотип Седоны"
+              />
+            </picture>
           </span>
           <button class="main-nav__toggle" type="button">
             <svg
@@ -80,13 +90,51 @@
           <div
             class="photograph__image-wrapper photograph__image-wrapper--main"
           >
-            <img
-              class="photograph__image photograph__image--main"
-              src="./img/photo-1-mobile.jpg"
-              alt="Дорога"
-              width="280"
-              height="280"
-            />
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="
+                  ./img/photo-1-desktop@1x.webp 1x,
+                  ./img/photo-1-desktop@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width:1200px)"
+                srcset="
+                  ./img/photo-1-desktop@1x.jpg 1x,
+                  ./img/photo-1-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./img/photo-1-tablet@1x.webp 1x,
+                  ./img/photo-1-tablet@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./img/photo-1-tablet@1x.jpg 1x,
+                  ./img/photo-1-tablet@2x.jpg 2x
+                "
+              />
+              <source
+                srcset="
+                  ./img/photo-1-mobile@1x.webp 1x,
+                  ./img/photo-1-mobile@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="photograph__image photograph__image--main"
+                src="./img/photo-1-mobile@1x.jpg 1x"
+                srcset="./img/photo-1-mobile@2x.jpg 2x"
+                alt="Дорога"
+              />
+            </picture>
           </div>
           <div class="photograph__wrapper photograph__wrapper--main">
             <div class="photograph__signature--wp">
@@ -99,13 +147,53 @@
         <div class="photograph__cards">
           <div class="photograph__item photograph__item--pd">
             <div class="photograph__image-wrapper">
-              <img
-                class="photograph__image"
-                src="./img/photo-2-mobile.jpg"
-                width="280"
-                height="280"
-                alt="Растительность"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/photo-2-desktop@1x.webp 1x,
+                    ./img/photo-2-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/photo-2-desktop@1x.jpg 1x,
+                    ./img/photo-2-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/photo-2-tablet@1x.webp 1x,
+                    ./img/photo-2-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/photo-2-tablet@1x.jpg 1x,
+                    ./img/photo-2-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    ./img/photo-2-mobile@1x.webp 1x,
+                    ./img/photo-2-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="photograph__image"
+                  src="./img/photo-2-mobile@1x.jpg 1x"
+                  srcset="./img/photo-2-mobile@2x.jpg 2x"
+                  width="280"
+                  height="280"
+                  alt="Растительность"
+                />
+              </picture>
             </div>
             <div class="photograph__wrapper">
               <div class="photograph__signature--wp">
@@ -119,15 +207,55 @@
           </div>
           <div class="photograph__item">
             <div class="photograph__image-wrapper">
-              <img
-                class="photograph__image"
-                src="./img/photo-3-mobile.jpg"
-                width="280"
-                height="280"
-                alt="Дорога на север"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/photo-3-desktop@1x.webp 1x,
+                    ./img/photo-3-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/photo-3-desktop@1x.jpg 1x,
+                    ./img/photo-3-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/photo-3-tablet@1x.webp 1x,
+                    ./img/photo-3-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/photo-3-tablet@1x.jpg 1x,
+                    ./img/photo-3-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    ./img/photo-3-mobile@1x.webp 1x,
+                    ./img/photo-3-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="photograph__image"
+                  src="./img/photo-3-mobile@1x.jpg 1x"
+                  srcset="./img/photo-3-mobile@2x.jpg 2x"
+                  width="280"
+                  height="280"
+                  alt="Дорога на север"
+                />
+              </picture>
             </div>
-            <div class="photograph__wrapper">
+            <div class="photograph__wrapper photograph__wrapper--dark">
               <div class="photograph__signature--wp">
                 <span class="photograph__signature">Дорога на север</span>
                 <cite class="photograph__author">Автор фото: Петр</cite>
@@ -137,13 +265,53 @@
           </div>
           <div class="photograph__item photograph__item--pd">
             <div class="photograph__image-wrapper">
-              <img
-                class="photograph__image"
-                src="./img/photo-4-mobile.jpg"
-                width="280"
-                height="280"
-                alt="Мост дьявола"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/photo-4-desktop@1x.webp 1x,
+                    ./img/photo-4-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/photo-4-desktop@1x.jpg 1x,
+                    ./img/photo-4-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/photo-4-tablet@1x.webp 1x,
+                    ./img/photo-4-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/photo-4-tablet@1x.jpg 1x,
+                    ./img/photo-4-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  srcset="
+                    ./img/photo-4-mobile@1x.webp 1x,
+                    ./img/photo-4-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="photograph__image"
+                  src="./img/photo-4-mobile@1x.jpg 1x"
+                  srcset="./img/photo-4-mobile@2x.jpg 2x"
+                  width="280"
+                  height="280"
+                  alt="Мост дьявола"
+                />
+              </picture>
             </div>
             <div class="photograph__wrapper">
               <div class="photograph__signature--wp">
@@ -163,13 +331,50 @@
             подорожали в очередной раз!
           </p>
         </div>
-        <img
-          class="video__image"
-          src="./img/video-mobile.jpg"
-          alt="Видео"
-          width="320"
-          height="201"
-        />
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="
+              ./img/video-desktop@1x.webp 1x,
+              ./img/video-desktop@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width:1200px)"
+            srcset="
+              ./img/video-desktop@1x.jpg 1x,
+              ./img/video-desktop@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              ./img/video-tablet@1x.webp 1x,
+              ./img/video-tablet@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x"
+          />
+          <source
+            srcset="
+              ./img/video-mobile@1x.webp 1x,
+              ./img/video-mobile@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="video__image"
+            src="./img/video-mobile@1x.jpg 1x"
+            srcset="./img/video-mobile@2x.jpg 2x"
+            alt="Видео"
+            width="320"
+            height="201"
+          />
+        </picture>
         <div class="video__panel">
           <div class="video__panel-control">
             <button type="button" class="video__panel-bt">
