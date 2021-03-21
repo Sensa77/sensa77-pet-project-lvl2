@@ -317,11 +317,11 @@ input[type="checkbox"]:checked
     }
 
     &--contacts::before {
-      left: 15px;
+      left: 4px;
     }
 
     &--contacts::after {
-      right: 0;
+      right: 15px;
     }
 
     &--attraction::before,
@@ -384,7 +384,6 @@ input[type="checkbox"]:checked
     display: none;
   }
 
-
   .number-form__label--tel {
     flex-direction: column;
     align-items: flex-start;
@@ -405,23 +404,24 @@ input[type="checkbox"]:checked
     margin: 0 auto;
     flex-wrap: wrap;
     width: 465px;
-}
+  }
 
   .attraction-form__label {
     flex-basis: 45%;
     margin-bottom: 31px;
-}
+  }
 
   .info__emotion {
     height: auto;
     padding-top: 36px;
     padding-bottom: 50px;
-}
+  }
 
   .emotion-form__text {
     width: 648px;
     height: 161px;
-}
+    font-weight: bold;
+  }
 
   .info__post {
     display: flex;
@@ -430,9 +430,9 @@ input[type="checkbox"]:checked
     justify-content: space-between;
     align-items: baseline;
     padding-bottom: 22px;
-}
+  }
 
   .info__regulations {
-     display: block;
-}
+    display: block;
   }
+}

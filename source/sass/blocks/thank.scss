@@ -11,6 +11,11 @@
   transform: translate(0, 50%);
 }
 
+.thanks__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .thanks--show {
   display: block;
 }
@@ -37,4 +42,29 @@
   background-color: #f2f2f2;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .thanks {
+    width: 640px;
+    height: 347px;
+    padding-top: 60px;
+    left: 22%;
+  }
+
+  .thanks__title {
+    font-size: 30px;
+    padding-top: 0;
+    margin-bottom: 32px;
+  }
+
+  .thanks__text {
+    margin-bottom: 35px;
+  }
+
+  .thanks__button-wp {
+    height: 146px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
 }

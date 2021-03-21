@@ -24,7 +24,9 @@
             </ul>
             <ul class="site-list__wrapper--right">
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="form.html">Форма отзыва</a>
+                <span class="site-list__link" href="form.html"
+                  >Форма отзыва</span
+                >
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="#">HTML Academy</a>
@@ -301,22 +303,22 @@
     <div class="error">
       <span class="error__title">Что-то пошло не так!</span>
       <p class="error__text">
-        Проверьте поля, выделенные <br />
-        красным, скорее всего вы <br />
-        забыли их заполнить
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
-      <button class="error__button button" type="button">Ок</button>
+      <button class="error__button button button--error" type="button">
+        Ок
+      </button>
     </div>
     <div class="thanks">
-      <span class="thanks__title">Ваш отзыв отправлен!</span>
-      <p class="thanks__text">
-        Спасибо за ваше участие, ваш <br />
-        отзыв уже поступил к нам. <br />
-        В ближайшее время мы <br />
-        опубликуем его на сайте.
-      </p>
+      <div class="thanks__wrapper">
+        <span class="thanks__title">Ваш отзыв отправлен!</span>
+        <p class="thanks__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br />В
+          ближайшее время мы опубликуем его на сайте.
+        </p>
+      </div>
       <div class="thanks__button-wp">
-        <button class="thanks__button button" type="button">
+        <button class="thanks__button button button--thanks" type="button">
           Закрыть окно
         </button>
       </div>

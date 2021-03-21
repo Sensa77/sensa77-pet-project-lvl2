@@ -10,6 +10,10 @@
   line-height: 26px;
   font-weight: bold;
   padding: 17px 47px;
+
+  &--error {
+    width: 180px;
+  }
 }
 
 .button:hover,
@@ -29,5 +33,13 @@
 
   .button--info {
     width: 323px;
-}
+  }
+
+  .button--error {
+    width: 272px;
+  }
+
+  .button--thanks {
+    width: 457px;
+  }
 }
