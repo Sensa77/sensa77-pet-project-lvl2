@@ -109,3 +109,41 @@
     width: 170px;
   }
 }
+
+@media (min-width: 1200px) {
+  .advantage__item {
+    width: 400px;
+    padding-top: 52px;
+  }
+
+  .advantage__text {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantage__title {
+    padding-left: 70px;
+    padding-right: 38px;
+  }
+
+  .advantage__number {
+    padding-left: 30px;
+  }
+
+  .advantage__description {
+    width: 337px;
+    padding-left: 30px;
+  }
+
+  .advantage__picture {
+    width: 800px;
+  }
+
+  .advantage__picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

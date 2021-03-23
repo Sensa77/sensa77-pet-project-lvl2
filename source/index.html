@@ -7,6 +7,7 @@
     <title>Sedona</title>
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <nav class="main-nav page-header__nav">
         <div class="site-list">
@@ -37,11 +38,11 @@
             <picture>
               <source
                 media="(min-width:1200px)"
-                srcset="./svg/logo-sedona-desktop.svg"
+                srcset="./svg/logo-sedona-desktop.svg" width="188" height="96"
               />
               <source
                 media="(min-width:768px)"
-                srcset="./svg/logo-sedona-tablet.svg"
+                srcset="./svg/logo-sedona-tablet.svg" width="102" height="83"
               />
               <img
                 src="./svg/logo-sedona-mobile.svg"
@@ -77,24 +78,29 @@
         />
       </section>
       <section class="aside page-main__aside">
+        <div class="aside__wrapper">
         <h2 class="aside__title">
           Седона-небольшой городок в Аризоне, заслуживающий большего!
         </h2>
         <p class="aside__description">
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
+      </div>
       </section>
       <section class="advantage page-main__advantage">
         <div class="advantage__wrapper">
           <div
             class="advantage__item advantage__item--intro advantage__item--active"
           >
+          <div class="advantage__text">
             <h3 class="advantage__title">Настоящий городок</h3>
             <span class="advantage__number">- №1 -</span>
             <p class="advantage__description">
               Седона не атракцион для туристов, там течет своя жизнь
             </p>
           </div>
+          </div>
+          <div class="advantage__picture">
           <picture>
             <source
               media="(min-width:1200px)"
@@ -128,12 +134,13 @@
               type="image/webp"
             />
             <img
-              class="advantage__picture"
+              
               src="./img/photo-city-mobile@1x.jpg 1x"
               srcset="./img/photo-city-mobile@2x.jpg 2x"
               alt="Фото городка"
             />
           </picture>
+        </div>
         </div>
         <div class="advantage-list">
           <div class="advantage-list__wrapper advantage-list__wrapper--home">
@@ -169,20 +176,21 @@
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
           </div>
+          <div class="advantage__picture">
           <picture>
             <source
               media="(min-width:1200px)"
               srcset="
-                ./img/photo-4-desktop@1x.webp 1x,
-                ./img/photo-4-desktop@2x.webp 2x
+                ./img/photo-bridge@1x.webp 1x,
+                ./img/photo-bridge@2x.webp 2x
               "
               type="image/webp"
             />
             <source
               media="(min-width:1200px)"
               srcset="
-                ./img/photo-4-desktop@1x.jpg 1x,
-                ./img/photo-4-desktop@2x.jpg 2x
+                ./img/photo-bridge@1x.jpg 1x,
+                ./img/photo-bridge@2x.jpg 2x
               "
             />
             <source
@@ -208,12 +216,12 @@
               type="image/webp"
             />
             <img
-              class="advantage__picture"
               src="./img/photo-bridge-mobile@1x.jpg 1x"
               srcset="./img/photo-bridge-mobile@2x.jpg 2x"
               alt="Фото моста дьявола"
             />
           </picture>
+        </div>
         </div>
         <div class="advantage__wrapper">
           <div class="advantage__item advantage__item--gray-background">

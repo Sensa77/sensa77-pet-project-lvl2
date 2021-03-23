@@ -168,3 +168,23 @@
     color: #dbd8d5;
   }
 }
+
+@media (min-width: 1200px) {
+  .site-list {
+    width: 1200px;
+  }
+
+  .site-list__wrapper {
+    width: 1200px;
+
+    &--left {
+      width: 462px;
+      padding-left: 89px;
+    }
+
+    &--right {
+      width: 462px;
+      padding-right: 73px;
+    }
+  }
+}

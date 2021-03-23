@@ -81,3 +81,10 @@ a {
     width: 768px;
   }
 }
+
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
+    background-color: #f2f2f2;
+  }
+}
