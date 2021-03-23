@@ -1,0 +1,127 @@
+.advantage-list {
+  min-height: 416px;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding-top: 29px;
+  color: #000;
+  background-color: #fff;
+}
+
+.advantage-list__wrapper:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.advantage-list__wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+  }
+
+  &--home::before {
+    background-image: url(../../svg/icon-home.svg);
+    width: 39px;
+    height: 37px;
+  }
+
+  &--souvenir::before {
+    background-image: url(../../svg/icon-gift.svg);
+    width: 32px;
+    height: 38px;
+  }
+
+  &--food::before {
+    background-image: url(../../svg/icon-burger.svg);
+    width: 40px;
+    height: 35px;
+  }
+}
+
+.advantage-list__title {
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  font-weight: bold;
+  position: relative;
+  padding-left: 49px;
+  height: 37px;
+  text-align: start;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.advantage-list__description {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: start;
+  padding-left: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .advantage-list {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    width: 768px;
+    padding-top: 53px;
+    min-height: 330px;
+    padding-bottom: 61px;
+  }
+
+  .advantage-list__wrapper:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .advantage-list__title {
+    font-size: 21px;
+    line-height: 26px;
+    padding-left: 0;
+    padding-top: 106px;
+    height: auto;
+    margin-bottom: 21px;
+  }
+
+  .advantage-list__description {
+    text-align: center;
+    padding-left: 36px;
+    padding-right: 40px;
+  }
+
+  .advantage-list__wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+
+    &--home::before {
+      width: 75px;
+      height: 71px;
+      top: 7px;
+    }
+
+    &--souvenir::before {
+      width: 65px;
+      height: 75px;
+      top: 4px;
+    }
+
+    &--food::before {
+      width: 75px;
+      height: 77px;
+      top: 11px;
+    }
+  }
+
+  .advantage-list__wrapper::before {
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

@@ -1,0 +1,40 @@
+.main-nav__wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav__logo {
+  display: block;
+  margin-right: 65px;
+}
+
+.main-nav__toggle {
+  border: none;
+  background-color: inherit;
+  height: 35px;
+  padding: 0;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.main-nav {
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    min-height: 56px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0;
+  }
+}

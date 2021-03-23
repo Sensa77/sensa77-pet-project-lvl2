@@ -1,0 +1,41 @@
+.page-main__greeting {
+  margin-top: -35px;
+}
+
+.aside--mg-photo {
+  margin-bottom: 24px;
+}
+
+.aside--mg-form {
+  margin-bottom: 16px;
+}
+
+.page-main__advantage {
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .page-main__greeting {
+    margin-top: -5px;
+  }
+
+  .page-main__advantage {
+    margin-top: 50px;
+  }
+
+  .aside--mg-photo {
+    margin-bottom: 43px;
+  }
+
+  .aside--mg-form {
+    margin-bottom: 53px;
+  }
+
+  .info__contacts-margin {
+    margin-top: 27px;
+  }
+
+  .info__attraction-margin {
+    margin-top: 20px;
+  }
+}
