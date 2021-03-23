@@ -24,31 +24,37 @@ const nameFormInputs = document.querySelectorAll(".name-form input");
 const contactFormInputs = document.querySelectorAll(".number-form input");
 const inputs = [...nameFormInputs, ...contactFormInputs];
 
-const showPopup = (event) => {
-  event.preventDefault();
-  let error = false;
-  inputs.forEach((input) => {
-    if (!input.value) {
-      error = true;
+if (submitButton) {
+  const showPopup = (event) => {
+    event.preventDefault();
+    let error = false;
+    inputs.forEach((input) => {
+      if (!input.value) {
+        error = true;
+      }
+    });
+    if (error) {
+      errorModal.classList.add("error--show");
+    } else {
+      submitModal.classList.add("thanks--show");
     }
-  });
-  if (error) {
-    errorModal.classList.add("error--show");
-  } else {
-    submitModal.classList.add("thanks--show");
-  }
-};
+  };
+  submitButton.addEventListener("click", showPopup);
+}
 
-const closeThanks = (event) => {
-  event.preventDefault();
-  submitModal.classList.remove("thanks--show");
-};
+if (closeButton) {
+  const closeThanks = (event) => {
+    event.preventDefault();
+    submitModal.classList.remove("thanks--show");
+  };
+  closeButton.addEventListener("click", closeThanks);
+}
 
-const closeError = (event) => {
-  event.preventDefault();
-  errorModal.classList.remove("error--show");
-};
+if (errorButton) {
+  const closeError = (event) => {
+    event.preventDefault();
+    errorModal.classList.remove("error--show");
+  };
 
-submitButton.addEventListener("click", showPopup);
-closeButton.addEventListener("click", closeThanks);
-errorButton.addEventListener("click", closeError);
+  errorButton.addEventListener("click", closeError);
+}
