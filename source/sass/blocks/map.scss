@@ -24,3 +24,17 @@
     height: 350px;
   }
 }
+
+@media (min-width: 1200px) {
+  .map {
+    background-color: #fff;
+  }
+
+  .map__google {
+    width: 1200px;
+  }
+
+  .map__image {
+    width: 1200px;
+  }
+}

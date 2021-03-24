@@ -32,3 +32,14 @@
     margin-bottom: 43px;
   }
 }
+
+@media (min-width: 1200px) {
+  .offer {
+    padding-bottom: 67px;
+    background-color: #fff;
+  }
+
+  .offer__description {
+    margin-bottom: 47px;
+  }
+}

@@ -69,3 +69,11 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 1200px) {
+  .social-networks {
+    padding-right: 119px;
+    padding-left: 119px;
+    background-color: #fff;
+  }
+}
