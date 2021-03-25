@@ -46,7 +46,7 @@
   content: "";
   position: absolute;
   display: block;
-  background-image: url(../../svg/icon-like.svg);
+  background-image: url(../../svg/icon-like-grey.svg);
   width: 23px;
   height: 21px;
   background-repeat: no-repeat;
@@ -121,5 +121,66 @@
     flex-wrap: wrap;
     padding-right: 60px;
     padding-left: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photograph__item {
+    width: 400px;
+    position: relative;
+    height: 267px;
+
+    &--main {
+      position: relative;
+      width: 1200px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      height: 400px;
+    }
+  }
+
+  .photograph__image-wrapper {
+    width: 400px;
+
+    &--main {
+      width: 1200px;
+    }
+  }
+
+  .photograph__item img {
+    width: 400px;
+  }
+
+  .photograph__item--main img {
+    width: 1200px;
+  }
+
+  .photograph__wrapper {
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    color: #fff;
+    width: 400px;
+    bottom: 0;
+
+    &--main {
+      width: 1200px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .photograph__cards {
+    padding: 0;
+    position: relative;
+    height: 267px;
+  }
+
+  .photograph__likes::before {
+    fill: #fff;
+  }
+
+  .photograph__likes::before {
+    background-image: url(../../svg/icon-like.svg);
   }
 }

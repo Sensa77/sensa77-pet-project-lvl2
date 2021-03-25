@@ -179,3 +179,37 @@
     fill: #949494;
   }
 }
+
+@media (min-width: 1200px) {
+  .video {
+    background-color: #fff;
+    padding-top: 71px;
+  }
+
+  .video__wrapper-text {
+    margin-bottom: 71px;
+  }
+
+  .video__image {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .video__panel {
+    width: 800px;
+    margin-left: 140px;
+  }
+
+  .video__panel-control {
+    width: 800px;
+  }
+
+  .video__panel-time {
+    width: 540px;
+  }
+
+  .video__panel-time::before {
+    width: 540px;
+  }
+}

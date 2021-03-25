@@ -63,6 +63,12 @@
     padding-right: 250px;
     padding-left: 337px;
     height: 206px;
+
+    &--photo {
+      height: 288px;
+      padding-top: 114px;
+      padding-right: 340px;
+    }
   }
 
   .aside__wrapper {
@@ -71,5 +77,15 @@
 
   .aside__title {
     margin-bottom: 29px;
+
+    &--photo {
+      margin-bottom: 27px;
+    }
+  }
+
+  .aside__description {
+    &--photo {
+      padding-right: 25px;
+    }
   }
 }
