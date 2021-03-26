@@ -69,6 +69,12 @@
       padding-top: 114px;
       padding-right: 340px;
     }
+
+    &--form {
+      height: 257px;
+      padding-top: 114px;
+      padding-right: 340px;
+    }
   }
 
   .aside__wrapper {
@@ -79,6 +85,10 @@
     margin-bottom: 29px;
 
     &--photo {
+      margin-bottom: 27px;
+    }
+
+    &--form {
       margin-bottom: 27px;
     }
   }
