@@ -1,8 +1,8 @@
 .advantage-list {
-  min-height: 416px;
+  min-height: 408px;
   margin-left: 18px;
   margin-right: 18px;
-  padding-top: 29px;
+  padding-top: 20px;
   color: #000;
   background-color: #fff;
 }
@@ -63,6 +63,10 @@
   margin-bottom: 0;
 }
 
+.advantage-list__description br {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .advantage-list {
     display: flex;
@@ -100,6 +104,18 @@
     align-items: center;
     width: calc(100% / 3);
 
+    &--home {
+      order: 0;
+    }
+
+    &--food {
+      order: 1;
+    }
+
+    &--souvenir {
+      order: 2;
+    }
+
     &--home::before {
       width: 75px;
       height: 71px;
@@ -129,5 +145,9 @@
 @media (min-width: 1200px) {
   .advantage-list {
     width: 1200px;
+  }
+
+  .advantage-list__description br {
+    display: inline-block;
   }
 }

@@ -325,7 +325,7 @@ input[type="checkbox"]:checked
     }
 
     &--contacts::after {
-      right: 15px;
+      right: 0;
     }
 
     &--attraction::before,
@@ -395,7 +395,7 @@ input[type="checkbox"]:checked
   }
 
   .number-form__input {
-    width: 664px;
+    width: 650px;
   }
 
   .info__attraction {

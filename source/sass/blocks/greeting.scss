@@ -18,9 +18,11 @@
 .greeting__signature {
   padding-top: 90px;
   box-sizing: content-box;
+  width: 282px;
 
   &--mini {
     padding-top: 52px;
+    width: 227px;
   }
 }
 
@@ -52,8 +54,10 @@
 
   .greeting__signature {
     padding-top: 78px;
+    width: 460px;
 
     &--mini {
+      padding-top: 93px;
       width: 457px;
       height: 79px;
     }

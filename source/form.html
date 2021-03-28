@@ -36,12 +36,22 @@
         </div>
         <div class="main-nav__wrapper">
           <span class="main-nav__logo">
-            <img
-              src="./svg/logo-sedona-mobile.svg"
-              width="102"
-              height="83"
-              alt="Логотип Седоны"
-            />
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="./svg/logo-sedona-desktop.svg"
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="./svg/logo-sedona-tablet.svg"
+              />
+              <img
+                src="./svg/logo-sedona-mobile.svg"
+                width="102"
+                height="83"
+                alt="Логотип Седоны"
+              />
+            </picture>
           </span>
           <button class="main-nav__toggle" type="button">
             <svg
