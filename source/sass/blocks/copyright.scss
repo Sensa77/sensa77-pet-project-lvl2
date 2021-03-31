@@ -13,7 +13,7 @@
 
 .copyright__text::after {
   content: "";
-  background-image: url(../../img/htmlacademy.png);
+  background-image: url(../img/htmlacademy.png);
   background-repeat: no-repeat;
   display: inline-block;
   width: 27px;
@@ -24,11 +24,11 @@
 
 .copyright__text:hover::after,
 .copyright__text:focus::after {
-  background-image: url(../../img/academy-blue.png);
+  background-image: url(../img/academy-blue.png);
 }
 
 .copyright__text:active::after {
-  background-image: url(../../img/academy-grey.png);
+  background-image: url(../img/academy-grey.png);
 }
 
 @media (min-width: 768px) {

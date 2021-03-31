@@ -1,5 +1,5 @@
 .greeting {
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   height: 390px;
   position: relative;
   z-index: 0;
@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
 
   &--mini {
-    background-image: url(../../img/back-mobile.png);
+    background-image: url(../img/back-mobile.png);
     height: 158px;
     position: relative;
     z-index: 0;
@@ -32,7 +32,7 @@
 
 .greeting::after {
   content: "";
-  background-image: url(../../img/intro-triangle.png);
+  background-image: url(../img/intro-triangle.png);
   width: 320px;
   height: 57px;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@
 
 @media (min-width: 768px) {
   .greeting {
-    background-image: url(../../img/bg-back-tablet@1x.jpg);
+    background-image: url(../img/bg-back-tablet@1x.jpg);
     height: 518px;
     margin-top: 0;
 
@@ -65,7 +65,7 @@
 
   .greeting::after {
     content: "";
-    background-image: url(../../svg/bg-intro-triangle-tablet.svg);
+    background-image: url(../svg/bg-intro-triangle-tablet.svg);
     width: 768px;
     height: 57px;
   }
@@ -73,7 +73,7 @@
 
 @media (min-width: 1200px) {
   .greeting {
-    background-image: url(../../img/bg-back-desktop@1x.jpg);
+    background-image: url(../img/bg-back-desktop@1x.jpg);
 
     &--mini {
       height: 300px;
@@ -81,7 +81,7 @@
   }
 
   .greeting::after {
-    background-image: url(../../svg/bg-intro-triangle-desktop.svg);
+    background-image: url(../svg/bg-intro-triangle-desktop.svg);
     width: 1200px;
     left: 50%;
     transform: translate(-50%, 0);

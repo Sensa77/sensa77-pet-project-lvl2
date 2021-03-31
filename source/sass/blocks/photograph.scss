@@ -46,7 +46,7 @@
   content: "";
   position: absolute;
   display: block;
-  background-image: url(../../svg/icon-like-grey.svg);
+  background-image: url(../svg/icon-like-grey.svg);
   width: 23px;
   height: 21px;
   background-repeat: no-repeat;
@@ -178,9 +178,6 @@
 
   .photograph__likes::before {
     fill: #fff;
-  }
-
-  .photograph__likes::before {
-    background-image: url(../../svg/icon-like.svg);
+    background-image: url(../svg/icon-like.svg);
   }
 }

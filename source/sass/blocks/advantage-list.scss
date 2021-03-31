@@ -23,19 +23,19 @@
   }
 
   &--home::before {
-    background-image: url(../../svg/icon-home.svg);
+    background-image: url(../svg/icon-home.svg);
     width: 39px;
     height: 37px;
   }
 
   &--souvenir::before {
-    background-image: url(../../svg/icon-gift.svg);
+    background-image: url(../svg/icon-gift.svg);
     width: 32px;
     height: 38px;
   }
 
   &--food::before {
-    background-image: url(../../svg/icon-burger.svg);
+    background-image: url(../svg/icon-burger.svg);
     width: 40px;
     height: 35px;
   }
