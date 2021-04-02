@@ -3,15 +3,25 @@
   "private": true,
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.2",
     "browser-sync": "2.26.13",
+    "del": "^6.0.0",
     "gulp": "4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "3.0.0",
+    "gulp-uglify-es": "^2.0.0",
     "postcss": "8.1.7",
+    "readable-stream": "^3.6.0",
     "stylelint": "13.7.2",
     "stylelint-config-htmlacademy": "0.1.4"
   },
@@ -19,8 +29,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"sourceg/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "browserslist": [
     "last 2 versions",
