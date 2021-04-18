@@ -22,6 +22,10 @@
   margin-bottom: 35px;
 }
 
+.video__wrapper-image {
+  width: 320px;
+}
+
 .video__image {
   display: block;
   position: relative;
@@ -34,7 +38,7 @@
 
 .video__panel-time {
   position: absolute;
-  width: 280px;
+  width: 100%;
   height: 45px;
   background-color: rgba($color: #000000, $alpha: 0.6);
   top: -45px;
@@ -45,7 +49,7 @@
   content: "";
   position: absolute;
   height: 3px;
-  width: 235px;
+  width: calc(100% - 44px);
   background-color: #fff;
   opacity: 20%;
   top: 22px;
@@ -69,7 +73,7 @@
   position: relative;
   display: flex;
   height: 66px;
-  width: 280px;
+  width: auto;
   background-color: #f2f2f2;
   justify-content: space-between;
   align-items: center;
@@ -87,6 +91,7 @@
   border: none;
   fill: #5c6870;
   padding-top: 6px;
+  background-color: transparent;
 }
 
 .video__panel-bt:hover,
@@ -125,6 +130,10 @@
     margin-bottom: 73px;
   }
 
+  .video__wrapper-image {
+    width: 648px;
+  }
+
   .video__image {
     width: 648px;
     height: 500px;
@@ -134,11 +143,10 @@
     margin-top: -93px;
     padding-left: 0;
     padding-right: 0;
-    width: 648px;
   }
 
   .video__panel-control {
-    width: 648px;
+    width: auto;
     height: 93px;
     background-color: rgba($color: #000000, $alpha: 0.6);
     padding-left: 29px;
@@ -147,9 +155,8 @@
 
   .video__panel-time {
     top: 0;
-    background-color: inherit;
     position: relative;
-    width: 388px;
+    width: 66%;
     background-color: transparent;
   }
 
@@ -159,7 +166,7 @@
   }
 
   .video__panel-time::before {
-    width: 388px;
+    width: 100%;
     left: 0;
   }
 
@@ -191,26 +198,18 @@
     margin-bottom: 71px;
   }
 
+  .video__wrapper-image {
+    width: 800px;
+    margin: 0 auto;
+  }
+
   .video__image {
     width: 800px;
     height: 500px;
     margin: 0 auto;
   }
 
-  .video__panel {
-    width: 800px;
-    margin-left: 140px;
-  }
-
-  .video__panel-control {
-    width: 800px;
-  }
-
   .video__panel-time {
-    width: 540px;
-  }
-
-  .video__panel-time::before {
-    width: 540px;
+    width: 73%;
   }
 }

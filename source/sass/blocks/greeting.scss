@@ -13,6 +13,13 @@
     z-index: 0;
     bottom: 0;
   }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url(../../img/bg-back-mobile@2x.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 768px auto;
+  }
 }
 
 .greeting__signature {
